@@ -1,0 +1,254 @@
+{
+  "uid" : "420c5a65ff6c7bd0",
+  "name" : "_041201 check Sales return order movements by the Register  \"R2012 Invoice closing of sales orders\"",
+  "historyId" : "check Sales return movements._041201 check Sales return order movements by the Register  \"R2012 Invoice closing of sales orders\"",
+  "time" : {
+    "start" : 1633604471290,
+    "stop" : 1633604475339,
+    "duration" : 4049
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633604472051,
+        "stop" : 1633604472061,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Select Sales return order",
+      "time" : {
+        "start" : 1633604472256,
+        "stop" : 1633604472795,
+        "duration" : 539
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.SalesReturnOrder\"",
+        "time" : {
+          "start" : 1633604472256,
+          "stop" : 1633604472263,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.SalesReturnOrder"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633604472458,
+          "stop" : 1633604472795,
+          "duration" : 337
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "6dcce42765511731",
+          "name" : "table",
+          "source" : "6dcce42765511731.csv",
+          "type" : "text/csv",
+          "size" : 20
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check movements by the Register  \"R2012 Invoice closing of sales orders\"",
+      "time" : {
+        "start" : 1633604473080,
+        "stop" : 1633604475143,
+        "duration" : 2063
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I click \"Registrations report\" button",
+        "time" : {
+          "start" : 1633604473080,
+          "stop" : 1633604473097,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Registrations report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select \"R2012 Invoice closing of sales orders\" exact value from \"Register\" drop-down list",
+        "time" : {
+          "start" : 1633604473291,
+          "stop" : 1633604473706,
+          "duration" : 415
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Register"
+        }, {
+          "name" : "Парам2",
+          "value" : "R2012 Invoice closing of sales orders"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633604473883,
+          "stop" : 1633604473916,
+          "duration" : 33
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then \"ResultTable\" spreadsheet document is equal",
+        "time" : {
+          "start" : 1633604474086,
+          "stop" : 1633604475143,
+          "duration" : 1057
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "e8e45b028f996d10",
+          "name" : "table",
+          "source" : "e8e45b028f996d10.csv",
+          "type" : "text/csv",
+          "size" : 1227
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633604475302,
+        "stop" : 1633604475339,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 10,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_041201 check Sales return order movements by the Register  \"R2012 Invoice closing of sales orders\""
+  }, {
+    "name" : "feature",
+    "value" : "_0400 Movements"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "movementssalesreturnorder"
+  }, {
+    "name" : "tag",
+    "value" : "movements"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "Movements"
+  }, {
+    "name" : "package",
+    "value" : "_0400 Movements"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "movements", "positive", "movementssalesreturnorder" ]
+  },
+  "source" : "420c5a65ff6c7bd0.json",
+  "parameterValues" : [ ]
+}

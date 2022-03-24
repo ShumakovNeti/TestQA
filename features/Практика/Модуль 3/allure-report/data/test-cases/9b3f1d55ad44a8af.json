@@ -1,0 +1,293 @@
+{
+  "uid" : "9b3f1d55ad44a8af",
+  "name" : "950480 check access to the Lock data modification for user with role Full access only read",
+  "historyId" : "lock data modification.950480 check access to the Lock data modification for user with role Full access only read",
+  "time" : {
+    "start" : 1633611143197,
+    "stop" : 1633611162882,
+    "duration" : 19685
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I connect \"SBorisova\" TestClient using \"SBorisova\" login and \"F12345\" password",
+      "time" : {
+        "start" : 1633611143925,
+        "stop" : 1633611156655,
+        "duration" : 12730
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "SBorisova"
+      }, {
+        "name" : "Парам2",
+        "value" : "SBorisova"
+      }, {
+        "name" : "Парам3",
+        "value" : "F12345"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Given I open hyperlink 'e1cib/list/Catalog.LockDataModificationReasons'",
+      "time" : {
+        "start" : 1633611156925,
+        "stop" : 1633611156932,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Catalog.LockDataModificationReasons"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1633611157129,
+        "stop" : 1633611157948,
+        "duration" : 819
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cf289b63f1334531",
+        "name" : "table",
+        "source" : "cf289b63f1334531.csv",
+        "type" : "text/csv",
+        "size" : 59
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1633611158143,
+        "stop" : 1633611158152,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Then the form attribute named \"ForAllUsers\" became equal to \"Yes\"",
+      "time" : {
+        "start" : 1633611158353,
+        "stop" : 1633611158728,
+        "duration" : 375
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "ForAllUsers"
+      }, {
+        "name" : "Парам2",
+        "value" : "Yes"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Then the form attribute named \"SetOneRuleForAllObjects\" became equal to \"No\"",
+      "time" : {
+        "start" : 1633611158958,
+        "stop" : 1633611158966,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "SetOneRuleForAllObjects"
+      }, {
+        "name" : "Парам2",
+        "value" : "No"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Then the form attribute named \"Decoration1\" became equal to \"Decoration1\"",
+      "time" : {
+        "start" : 1633611159160,
+        "stop" : 1633611159169,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Decoration1"
+      }, {
+        "name" : "Парам2",
+        "value" : "Decoration1"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Then the form attribute named \"DisableRule\" became equal to \"No\"",
+      "time" : {
+        "start" : 1633611159366,
+        "stop" : 1633611159375,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "DisableRule"
+      }, {
+        "name" : "Парам2",
+        "value" : "No"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And \"RuleList\" table contains lines",
+      "time" : {
+        "start" : 1633611159568,
+        "stop" : 1633611159687,
+        "duration" : 119
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "97b62edf8c7e71d5",
+        "name" : "table",
+        "source" : "97b62edf8c7e71d5.csv",
+        "type" : "text/csv",
+        "size" : 245
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "RuleList"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "And I close TestClient session",
+      "time" : {
+        "start" : 1633611159984,
+        "stop" : 1633611162171,
+        "duration" : 2187
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I connect \"Этот клиент\" profile of TestClient",
+      "time" : {
+        "start" : 1633611162411,
+        "stop" : 1633611162881,
+        "duration" : 470
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Этот клиент"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 11,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "950480 check access to the Lock data modification for user with role Full access only read"
+  }, {
+    "name" : "feature",
+    "value" : "_9500AccessRights"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "accessrights"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "AccessRights"
+  }, {
+    "name" : "package",
+    "value" : "_9500AccessRights"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "accessrights", "tree", "positive" ]
+  },
+  "source" : "9b3f1d55ad44a8af.json",
+  "parameterValues" : [ ]
+}

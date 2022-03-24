@@ -1,0 +1,2333 @@
+{
+  "uid" : "be011ba16d696560",
+  "name" : "950407 create rules for accumulation register",
+  "historyId" : "lock data modification.950407 create rules for accumulation register",
+  "time" : {
+    "start" : 1633610711965,
+    "stop" : 1633610761324,
+    "duration" : 49359
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I close TestClient session",
+      "time" : {
+        "start" : 1633610712885,
+        "stop" : 1633610715208,
+        "duration" : 2323
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I connect \"Этот клиент\" profile of TestClient",
+      "time" : {
+        "start" : 1633610715323,
+        "stop" : 1633610727543,
+        "duration" : 12220
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Этот клиент"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Preparation",
+      "time" : {
+        "start" : 1633610727714,
+        "stop" : 1633610730983,
+        "duration" : 3269
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink 'e1cib/list/Document.SalesInvoice'",
+        "time" : {
+          "start" : 1633610727714,
+          "stop" : 1633610727720,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.SalesInvoice"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "If \"List\" table does not contain lines Then",
+        "time" : {
+          "start" : 1633610727917,
+          "stop" : 1633610728752,
+          "duration" : 835
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "d44fb26d7bb12256",
+          "name" : "table",
+          "source" : "d44fb26d7bb12256.csv",
+          "type" : "text/csv",
+          "size" : 19
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "Given I open hyperlink 'e1cib/list/Document.SalesOrder'",
+        "time" : {
+          "start" : 1633610728943,
+          "stop" : 1633610728951,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.SalesOrder"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "If \"List\" table does not contain lines Then",
+        "time" : {
+          "start" : 1633610729136,
+          "stop" : 1633610729639,
+          "duration" : 503
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "f2f8b3e5b7b6f564",
+          "name" : "table",
+          "source" : "f2f8b3e5b7b6f564.csv",
+          "type" : "text/csv",
+          "size" : 18
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "Given I open hyperlink 'e1cib/list/Catalog.LockDataModificationReasons'",
+        "time" : {
+          "start" : 1633610729755,
+          "stop" : 1633610729760,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Catalog.LockDataModificationReasons"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "If \"List\" table contains lines Then",
+        "time" : {
+          "start" : 1633610729950,
+          "stop" : 1633610730983,
+          "duration" : 1033
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633610730357,
+            "stop" : 1633610730370,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "98bffe69a41af5ab",
+            "name" : "table",
+            "source" : "98bffe69a41af5ab.csv",
+            "type" : "text/csv",
+            "size" : 72
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And in the table \"List\" I click the button named \"ListContextMenuSetDeletionMark\"",
+          "time" : {
+            "start" : 1633610730559,
+            "stop" : 1633610730573,
+            "duration" : 14
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "ListContextMenuSetDeletionMark"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1633610730759,
+            "stop" : 1633610730767,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Yes\" button",
+          "time" : {
+            "start" : 1633610730965,
+            "stop" : 1633610730983,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Yes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ {
+          "uid" : "16cfd05224385ec3",
+          "name" : "table",
+          "source" : "16cfd05224385ec3.csv",
+          "type" : "text/csv",
+          "size" : 72
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 4,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 10,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 4
+    }, {
+      "name" : "Given I open hyperlink 'e1cib/list/Catalog.LockDataModificationReasons'",
+      "time" : {
+        "start" : 1633610731166,
+        "stop" : 1633610731712,
+        "duration" : 546
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Catalog.LockDataModificationReasons"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Create rule for R4011 Free stocks (=)",
+      "time" : {
+        "start" : 1633610731980,
+        "stop" : 1633610735857,
+        "duration" : 3877
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I click the button named \"FormCreate\"",
+        "time" : {
+          "start" : 1633610731980,
+          "stop" : 1633610731995,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormCreate"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I input \"lock accumulation register\" text in \"ENG\" field",
+        "time" : {
+          "start" : 1633610732183,
+          "stop" : 1633610732398,
+          "duration" : 215
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ENG"
+        }, {
+          "name" : "Парам2",
+          "value" : "lock accumulation register"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I set checkbox \"For all users\"",
+        "time" : {
+          "start" : 1633610732590,
+          "stop" : 1633610732610,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "For all users"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And in the table \"RuleList\" I click the button named \"RuleListAdd\"",
+        "time" : {
+          "start" : 1633610732795,
+          "stop" : 1633610732820,
+          "duration" : 25
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        }, {
+          "name" : "Парам2",
+          "value" : "RuleListAdd"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select \"R4011 Free stocks\" exact value from \"Type\" drop-down list in \"RuleList\" table",
+        "time" : {
+          "start" : 1633610733003,
+          "stop" : 1633610733044,
+          "duration" : 41
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        }, {
+          "name" : "Парам2",
+          "value" : "Type"
+        }, {
+          "name" : "Парам3",
+          "value" : "R4011 Free stocks"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I move to the next attribute",
+        "time" : {
+          "start" : 1633610733197,
+          "stop" : 1633610733207,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select \"Store\" exact value from the drop-down list named \"RuleListAttribute\" in \"RuleList\" table",
+        "time" : {
+          "start" : 1633610733405,
+          "stop" : 1633610733622,
+          "duration" : 217
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        }, {
+          "name" : "Парам2",
+          "value" : "RuleListAttribute"
+        }, {
+          "name" : "Парам3",
+          "value" : "Store"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I move to the next attribute",
+        "time" : {
+          "start" : 1633610733809,
+          "stop" : 1633610733819,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select \"=\" exact value from the drop-down list named \"RuleListComparisonType\" in \"RuleList\" table",
+        "time" : {
+          "start" : 1633610734008,
+          "stop" : 1633610734059,
+          "duration" : 51
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        }, {
+          "name" : "Парам2",
+          "value" : "RuleListComparisonType"
+        }, {
+          "name" : "Парам3",
+          "value" : "="
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I move to the next attribute",
+        "time" : {
+          "start" : 1633610734219,
+          "stop" : 1633610734227,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click choice button of the attribute named \"RuleListValue\" in \"RuleList\" table",
+        "time" : {
+          "start" : 1633610734414,
+          "stop" : 1633610734581,
+          "duration" : 167
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        }, {
+          "name" : "Парам2",
+          "value" : "RuleListValue"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633610734824,
+          "stop" : 1633610735327,
+          "duration" : 503
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "391308169fb30659",
+          "name" : "table",
+          "source" : "391308169fb30659.csv",
+          "type" : "text/csv",
+          "size" : 30
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I activate \"Description\" field in \"List\" table",
+        "time" : {
+          "start" : 1633610735433,
+          "stop" : 1633610735446,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        }, {
+          "name" : "Парам2",
+          "value" : "Description"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633610735641,
+          "stop" : 1633610735650,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I finish line editing in \"RuleList\" table",
+        "time" : {
+          "start" : 1633610735844,
+          "stop" : 1633610735857,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 15,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Create rule for R2021 Customer transactions (in)",
+      "time" : {
+        "start" : 1633610736050,
+        "stop" : 1633610739112,
+        "duration" : 3062
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And in the table \"RuleList\" I click the button named \"RuleListAdd\"",
+        "time" : {
+          "start" : 1633610736050,
+          "stop" : 1633610736068,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        }, {
+          "name" : "Парам2",
+          "value" : "RuleListAdd"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select \"R2021 Customer transactions\" exact value from \"Type\" drop-down list in \"RuleList\" table",
+        "time" : {
+          "start" : 1633610736257,
+          "stop" : 1633610736297,
+          "duration" : 40
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        }, {
+          "name" : "Парам2",
+          "value" : "Type"
+        }, {
+          "name" : "Парам3",
+          "value" : "R2021 Customer transactions"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I move to the next attribute",
+        "time" : {
+          "start" : 1633610736447,
+          "stop" : 1633610736461,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select \"Partner\" exact value from the drop-down list named \"RuleListAttribute\" in \"RuleList\" table",
+        "time" : {
+          "start" : 1633610736653,
+          "stop" : 1633610736874,
+          "duration" : 221
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        }, {
+          "name" : "Парам2",
+          "value" : "RuleListAttribute"
+        }, {
+          "name" : "Парам3",
+          "value" : "Partner"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I move to the next attribute",
+        "time" : {
+          "start" : 1633610737056,
+          "stop" : 1633610737068,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select \"in\" exact value from the drop-down list named \"RuleListComparisonType\" in \"RuleList\" table",
+        "time" : {
+          "start" : 1633610737260,
+          "stop" : 1633610737299,
+          "duration" : 39
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        }, {
+          "name" : "Парам2",
+          "value" : "RuleListComparisonType"
+        }, {
+          "name" : "Парам3",
+          "value" : "in"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I move to the next attribute",
+        "time" : {
+          "start" : 1633610737471,
+          "stop" : 1633610737483,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I activate field named \"RuleListValue\" in \"RuleList\" table",
+        "time" : {
+          "start" : 1633610737665,
+          "stop" : 1633610737677,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        }, {
+          "name" : "Парам2",
+          "value" : "RuleListValue"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select current line in \"RuleList\" table",
+        "time" : {
+          "start" : 1633610737873,
+          "stop" : 1633610737881,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click choice button of the attribute named \"RuleListValue\" in \"RuleList\" table",
+        "time" : {
+          "start" : 1633610738072,
+          "stop" : 1633610738093,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        }, {
+          "name" : "Парам2",
+          "value" : "RuleListValue"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select \"Kalipso\" by string from the drop-down list named \"RuleListValue\" in \"RuleList\" table",
+        "time" : {
+          "start" : 1633610738274,
+          "stop" : 1633610738678,
+          "duration" : 404
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        }, {
+          "name" : "Парам2",
+          "value" : "RuleListValue"
+        }, {
+          "name" : "Парам3",
+          "value" : "Kalipso"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I finish line editing in \"RuleList\" table",
+        "time" : {
+          "start" : 1633610738886,
+          "stop" : 1633610738894,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "RuleList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Save and close\" button",
+        "time" : {
+          "start" : 1633610739090,
+          "stop" : 1633610739112,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Save and close"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 13,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Check rules (=)",
+      "time" : {
+        "start" : 1633610739294,
+        "stop" : 1633610749670,
+        "duration" : 10376
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "* Modification (UndoPosting)",
+        "time" : {
+          "start" : 1633610739294,
+          "stop" : 1633610741334,
+          "duration" : 2040
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink 'e1cib/list/Document.SalesOrder'",
+          "time" : {
+            "start" : 1633610739294,
+            "stop" : 1633610739813,
+            "duration" : 519
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Document.SalesOrder"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633610740106,
+            "stop" : 1633610740127,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "27502d97a3e6bc1",
+            "name" : "table",
+            "source" : "27502d97a3e6bc1.csv",
+            "type" : "text/csv",
+            "size" : 18
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And in the table \"List\" I click the button named \"ListContextMenuUndoPosting\"",
+          "time" : {
+            "start" : 1633610740317,
+            "stop" : 1633610740331,
+            "duration" : 14
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "ListContextMenuUndoPosting"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1633610740509,
+            "stop" : 1633610740772,
+            "duration" : 263
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"OK\" button",
+          "time" : {
+            "start" : 1633610740918,
+            "stop" : 1633610740931,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "OK"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Given Recent TestClient message contains \"Data lock reasons:*\" string by template",
+          "time" : {
+            "start" : 1633610741119,
+            "stop" : 1633610741170,
+            "duration" : 51
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Data lock reasons:*"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Given Recent TestClient message contains \"lock accumulation register\" string by template",
+          "time" : {
+            "start" : 1633610741327,
+            "stop" : 1633610741334,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "lock accumulation register"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 7,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "* Create new",
+        "time" : {
+          "start" : 1633610741529,
+          "stop" : 1633610745250,
+          "duration" : 3721
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633610741529,
+            "stop" : 1633610741553,
+            "duration" : 24
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "8db8df35777b561c",
+            "name" : "table",
+            "source" : "8db8df35777b561c.csv",
+            "type" : "text/csv",
+            "size" : 18
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And in the table \"List\" I click the button named \"ListContextMenuCopy\"",
+          "time" : {
+            "start" : 1633610741729,
+            "stop" : 1633610741744,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "ListContextMenuCopy"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Post and close\" button",
+          "time" : {
+            "start" : 1633610741933,
+            "stop" : 1633610743535,
+            "duration" : 1602
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Post and close"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1633610743761,
+            "stop" : 1633610744313,
+            "duration" : 552
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"OK\" button",
+          "time" : {
+            "start" : 1633610744572,
+            "stop" : 1633610744583,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "OK"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Given Recent TestClient message contains \"Data lock reasons:*\" string by template",
+          "time" : {
+            "start" : 1633610744780,
+            "stop" : 1633610744845,
+            "duration" : 65
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Data lock reasons:*"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Given Recent TestClient message contains \"lock accumulation register\" string by template",
+          "time" : {
+            "start" : 1633610744988,
+            "stop" : 1633610744996,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "lock accumulation register"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1633610745180,
+            "stop" : 1633610745250,
+            "duration" : 70
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 8,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "* Marked for deletion",
+        "time" : {
+          "start" : 1633610745388,
+          "stop" : 1633610747631,
+          "duration" : 2243
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink 'e1cib/list/Document.SalesOrder'",
+          "time" : {
+            "start" : 1633610745388,
+            "stop" : 1633610745393,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Document.SalesOrder"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633610745589,
+            "stop" : 1633610745850,
+            "duration" : 261
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "ac76e7e39fa148d3",
+            "name" : "table",
+            "source" : "ac76e7e39fa148d3.csv",
+            "type" : "text/csv",
+            "size" : 18
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And in the table \"List\" I click the button named \"ListContextMenuSetDeletionMark\"",
+          "time" : {
+            "start" : 1633610745995,
+            "stop" : 1633610746010,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "ListContextMenuSetDeletionMark"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1633610746197,
+            "stop" : 1633610746202,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Yes\" button",
+          "time" : {
+            "start" : 1633610746403,
+            "stop" : 1633610746417,
+            "duration" : 14
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Yes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1633610746604,
+            "stop" : 1633610746758,
+            "duration" : 154
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"OK\" button",
+          "time" : {
+            "start" : 1633610747008,
+            "stop" : 1633610747018,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "OK"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Given Recent TestClient message contains \"Data lock reasons:*\" string by template",
+          "time" : {
+            "start" : 1633610747212,
+            "stop" : 1633610747254,
+            "duration" : 42
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Data lock reasons:*"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Given Recent TestClient message contains \"lock accumulation register\" string by template",
+          "time" : {
+            "start" : 1633610747416,
+            "stop" : 1633610747424,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "lock accumulation register"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1633610747611,
+            "stop" : 1633610747631,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 10,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "* Modification (re-Posting)",
+        "time" : {
+          "start" : 1633610747826,
+          "stop" : 1633610749670,
+          "duration" : 1844
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink 'e1cib/list/Document.SalesOrder'",
+          "time" : {
+            "start" : 1633610747826,
+            "stop" : 1633610747831,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Document.SalesOrder"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633610748031,
+            "stop" : 1633610748278,
+            "duration" : 247
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "96a8121d6239bde8",
+            "name" : "table",
+            "source" : "96a8121d6239bde8.csv",
+            "type" : "text/csv",
+            "size" : 18
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And in the table \"List\" I click the button named \"ListContextMenuPost\"",
+          "time" : {
+            "start" : 1633610748431,
+            "stop" : 1633610748444,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "ListContextMenuPost"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then user message window does not contain messages",
+          "time" : {
+            "start" : 1633610748637,
+            "stop" : 1633610749462,
+            "duration" : 825
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1633610749650,
+            "stop" : 1633610749670,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 5,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 34,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 4
+    }, {
+      "name" : "* Check rules (in)",
+      "time" : {
+        "start" : 1633610749856,
+        "stop" : 1633610759422,
+        "duration" : 9566
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "* Modification (UndoPosting)",
+        "time" : {
+          "start" : 1633610749856,
+          "stop" : 1633610751495,
+          "duration" : 1639
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink 'e1cib/list/Document.SalesInvoice'",
+          "time" : {
+            "start" : 1633610749856,
+            "stop" : 1633610749862,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Document.SalesInvoice"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633610750057,
+            "stop" : 1633610750360,
+            "duration" : 303
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "adf2e8685b60bb",
+            "name" : "table",
+            "source" : "adf2e8685b60bb.csv",
+            "type" : "text/csv",
+            "size" : 19
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And in the table \"List\" I click the button named \"ListContextMenuUndoPosting\"",
+          "time" : {
+            "start" : 1633610750466,
+            "stop" : 1633610750480,
+            "duration" : 14
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "ListContextMenuUndoPosting"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1633610750666,
+            "stop" : 1633610750851,
+            "duration" : 185
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"OK\" button",
+          "time" : {
+            "start" : 1633610751073,
+            "stop" : 1633610751082,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "OK"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Given Recent TestClient message contains \"Data lock reasons:*\" string by template",
+          "time" : {
+            "start" : 1633610751274,
+            "stop" : 1633610751319,
+            "duration" : 45
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Data lock reasons:*"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Given Recent TestClient message contains \"lock accumulation register\" string by template",
+          "time" : {
+            "start" : 1633610751489,
+            "stop" : 1633610751495,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "lock accumulation register"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 7,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "* Create new",
+        "time" : {
+          "start" : 1633610751686,
+          "stop" : 1633610754783,
+          "duration" : 3097
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633610751686,
+            "stop" : 1633610751710,
+            "duration" : 24
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "e4e2a526b525e18b",
+            "name" : "table",
+            "source" : "e4e2a526b525e18b.csv",
+            "type" : "text/csv",
+            "size" : 19
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And in the table \"List\" I click the button named \"ListContextMenuCopy\"",
+          "time" : {
+            "start" : 1633610751886,
+            "stop" : 1633610751897,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "ListContextMenuCopy"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Post and close\" button",
+          "time" : {
+            "start" : 1633610752089,
+            "stop" : 1633610752986,
+            "duration" : 897
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Post and close"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1633610753106,
+            "stop" : 1633610753933,
+            "duration" : 827
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"OK\" button",
+          "time" : {
+            "start" : 1633610754123,
+            "stop" : 1633610754133,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "OK"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Given Recent TestClient message contains \"Data lock reasons:*\" string by template",
+          "time" : {
+            "start" : 1633610754332,
+            "stop" : 1633610754386,
+            "duration" : 54
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Data lock reasons:*"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Given Recent TestClient message contains \"lock accumulation register\" string by template",
+          "time" : {
+            "start" : 1633610754532,
+            "stop" : 1633610754540,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "lock accumulation register"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1633610754743,
+            "stop" : 1633610754783,
+            "duration" : 40
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 8,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "* Marked for deletion",
+        "time" : {
+          "start" : 1633610754932,
+          "stop" : 1633610757193,
+          "duration" : 2261
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink 'e1cib/list/Document.SalesInvoice'",
+          "time" : {
+            "start" : 1633610754932,
+            "stop" : 1633610754939,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Document.SalesInvoice"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633610755137,
+            "stop" : 1633610755387,
+            "duration" : 250
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "d279e8d8e6ce84e7",
+            "name" : "table",
+            "source" : "d279e8d8e6ce84e7.csv",
+            "type" : "text/csv",
+            "size" : 19
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And in the table \"List\" I click the button named \"ListContextMenuSetDeletionMark\"",
+          "time" : {
+            "start" : 1633610755544,
+            "stop" : 1633610755556,
+            "duration" : 12
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "ListContextMenuSetDeletionMark"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1633610755746,
+            "stop" : 1633610755753,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Yes\" button",
+          "time" : {
+            "start" : 1633610755956,
+            "stop" : 1633610755974,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Yes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1633610756153,
+            "stop" : 1633610756332,
+            "duration" : 179
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"OK\" button",
+          "time" : {
+            "start" : 1633610756557,
+            "stop" : 1633610756567,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "OK"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Given Recent TestClient message contains \"Data lock reasons:*\" string by template",
+          "time" : {
+            "start" : 1633610756762,
+            "stop" : 1633610756810,
+            "duration" : 48
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Data lock reasons:*"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Given Recent TestClient message contains \"lock accumulation register\" string by template",
+          "time" : {
+            "start" : 1633610756974,
+            "stop" : 1633610756981,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "lock accumulation register"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1633610757165,
+            "stop" : 1633610757193,
+            "duration" : 28
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 10,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "* Modification (re-Posting)",
+        "time" : {
+          "start" : 1633610757371,
+          "stop" : 1633610759422,
+          "duration" : 2051
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink 'e1cib/list/Document.SalesInvoice'",
+          "time" : {
+            "start" : 1633610757371,
+            "stop" : 1633610757380,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Document.SalesInvoice"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633610757577,
+            "stop" : 1633610757887,
+            "duration" : 310
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "c3da99b264d574fe",
+            "name" : "table",
+            "source" : "c3da99b264d574fe.csv",
+            "type" : "text/csv",
+            "size" : 19
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And in the table \"List\" I click the button named \"ListContextMenuPost\"",
+          "time" : {
+            "start" : 1633610758184,
+            "stop" : 1633610758195,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "ListContextMenuPost"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then user message window does not contain messages",
+          "time" : {
+            "start" : 1633610758384,
+            "stop" : 1633610759233,
+            "duration" : 849
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1633610759402,
+            "stop" : 1633610759422,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 5,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 34,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 4
+    }, {
+      "name" : "* Delete rules",
+      "time" : {
+        "start" : 1633610759608,
+        "stop" : 1633610761324,
+        "duration" : 1716
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink 'e1cib/list/Catalog.LockDataModificationReasons'",
+        "time" : {
+          "start" : 1633610759608,
+          "stop" : 1633610759615,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Catalog.LockDataModificationReasons"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633610759806,
+          "stop" : 1633610759850,
+          "duration" : 44
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "8dcda6bc280b0aec",
+          "name" : "table",
+          "source" : "8dcda6bc280b0aec.csv",
+          "type" : "text/csv",
+          "size" : 46
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And in the table \"List\" I click the button named \"ListContextMenuSetDeletionMark\"",
+        "time" : {
+          "start" : 1633610760009,
+          "stop" : 1633610760023,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        }, {
+          "name" : "Парам2",
+          "value" : "ListContextMenuSetDeletionMark"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then \"1C:Enterprise\" window is opened",
+        "time" : {
+          "start" : 1633610760226,
+          "stop" : 1633610760231,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "1C:Enterprise"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Yes\" button",
+        "time" : {
+          "start" : 1633610760439,
+          "stop" : 1633610760455,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Yes"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633610760623,
+          "stop" : 1633610761324,
+          "duration" : 701
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 121,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 14
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "950407 create rules for accumulation register"
+  }, {
+    "name" : "feature",
+    "value" : "_9500AccessRights"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "accessrights"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "AccessRights"
+  }, {
+    "name" : "package",
+    "value" : "_9500AccessRights"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "accessrights", "tree", "positive" ]
+  },
+  "source" : "be011ba16d696560.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,395 @@
+{
+  "uid" : "1494ede6205c83b6",
+  "name" : "_090310 create Goods receipt for several Purchase invoice with different partner terms, Purchase invoice before Goods receipt",
+  "historyId" : "creation mechanism based on for purchase documents._090310 create Goods receipt for several Purchase invoice with different partner terms, Purchase invoice before Goods receipt",
+  "time" : {
+    "start" : 1633604211743,
+    "stop" : 1633604217659,
+    "duration" : 5916
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "* Create Goods receipt for PI PurchaseInvoice090302051, PurchaseInvoice090302052",
+      "time" : {
+        "start" : 1633604212514,
+        "stop" : 1633604213959,
+        "duration" : 1445
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.PurchaseInvoice\"",
+        "time" : {
+          "start" : 1633604212514,
+          "stop" : 1633604212522,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.PurchaseInvoice"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633604212728,
+          "stop" : 1633604213386,
+          "duration" : 658
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "a37a2b9051599fcd",
+          "name" : "table",
+          "source" : "a37a2b9051599fcd.csv",
+          "type" : "text/csv",
+          "size" : 18
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I move one line down in \"List\" table and select line",
+        "time" : {
+          "start" : 1633604213528,
+          "stop" : 1633604213536,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click the button named \"FormDocumentGoodsReceiptGenerate\"",
+        "time" : {
+          "start" : 1633604213735,
+          "stop" : 1633604213747,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormDocumentGoodsReceiptGenerate"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Ok\" button",
+        "time" : {
+          "start" : 1633604213939,
+          "stop" : 1633604213959,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Ok"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check filling in Goods receipt",
+      "time" : {
+        "start" : 1633604214138,
+        "stop" : 1633604216174,
+        "duration" : 2036
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Then the form attribute named \"Company\" became equal to \"Main Company\"",
+        "time" : {
+          "start" : 1633604214138,
+          "stop" : 1633604214710,
+          "duration" : 572
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Company"
+        }, {
+          "name" : "Парам2",
+          "value" : "Main Company"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then the form attribute named \"LegalName\" became equal to \"Company Ferron BP\"",
+        "time" : {
+          "start" : 1633604214950,
+          "stop" : 1633604214957,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "LegalName"
+        }, {
+          "name" : "Парам2",
+          "value" : "Company Ferron BP"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then the form attribute named \"Description\" became equal to \"Click to enter description\"",
+        "time" : {
+          "start" : 1633604215154,
+          "stop" : 1633604215163,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Description"
+        }, {
+          "name" : "Парам2",
+          "value" : "Click to enter description"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then the form attribute named \"Store\" became equal to \"Store 02\"",
+        "time" : {
+          "start" : 1633604215357,
+          "stop" : 1633604215365,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Store"
+        }, {
+          "name" : "Парам2",
+          "value" : "Store 02"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then the form attribute named \"Partner\" became equal to \"Partner Ferron 1\"",
+        "time" : {
+          "start" : 1633604215569,
+          "stop" : 1633604215578,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Partner"
+        }, {
+          "name" : "Парам2",
+          "value" : "Partner Ferron 1"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I save number of \"ItemList\" table lines as \"Q\"",
+        "time" : {
+          "start" : 1633604215762,
+          "stop" : 1633604215801,
+          "duration" : 39
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        }, {
+          "name" : "Парам2",
+          "value" : "Q"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "If \"Q\" variable is equal to 1 Then",
+        "time" : {
+          "start" : 1633604215965,
+          "stop" : 1633604215970,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Q"
+        }, {
+          "name" : "Парам2",
+          "value" : "1"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "If \"Q\" variable is equal to 3 Then",
+        "time" : {
+          "start" : 1633604216169,
+          "stop" : 1633604216174,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Q"
+        }, {
+          "name" : "Парам2",
+          "value" : "3"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 8,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I click the button named \"FormPostAndClose\"",
+      "time" : {
+        "start" : 1633604216371,
+        "stop" : 1633604216382,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormPostAndClose"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633604216575,
+        "stop" : 1633604217659,
+        "duration" : 1084
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 17,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_090310 create Goods receipt for several Purchase invoice with different partner terms, Purchase invoice before Goods receipt"
+  }, {
+    "name" : "feature",
+    "value" : "_2950Сreation based multi"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "creationbasedmulti"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "CreationBasedMulti"
+  }, {
+    "name" : "package",
+    "value" : "_2950Сreation based multi"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "positive", "creationbasedmulti" ]
+  },
+  "source" : "1494ede6205c83b6.json",
+  "parameterValues" : [ ]
+}

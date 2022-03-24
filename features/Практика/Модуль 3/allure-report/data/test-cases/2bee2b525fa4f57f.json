@@ -1,0 +1,959 @@
+{
+  "uid" : "2bee2b525fa4f57f",
+  "name" : "_0203002 check filters in the partner catalog",
+  "historyId" : "check the display of lists of catalogs elements for which there are selections._0203002 check filters in the partner catalog",
+  "time" : {
+    "start" : 1633608434060,
+    "stop" : 1633608453345,
+    "duration" : 19285
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "* Check for data availability",
+      "time" : {
+        "start" : 1633608434835,
+        "stop" : 1633608436075,
+        "duration" : 1240
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Catalog.Partners\"",
+        "time" : {
+          "start" : 1633608434835,
+          "stop" : 1633608434844,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Catalog.Partners"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"List\" table contains lines",
+        "time" : {
+          "start" : 1633608435041,
+          "stop" : 1633608435934,
+          "duration" : 893
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "14fd4c67b5b6411",
+          "name" : "table",
+          "source" : "14fd4c67b5b6411.csv",
+          "type" : "text/csv",
+          "size" : 66
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633608436057,
+          "stop" : 1633608436075,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Filter check customers in the sales section",
+      "time" : {
+        "start" : 1633608436269,
+        "stop" : 1633608439931,
+        "duration" : 3662
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "* Open list form",
+        "time" : {
+          "start" : 1633608436269,
+          "stop" : 1633608436468,
+          "duration" : 199
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "When in sections panel I select \"Sales - A/R\"",
+          "time" : {
+            "start" : 1633608436269,
+            "stop" : 1633608436286,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Sales - A/R"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And in functions panel I select \"Customers\"",
+          "time" : {
+            "start" : 1633608436460,
+            "stop" : 1633608436468,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Customers"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "* Check the selection by customer",
+        "time" : {
+          "start" : 1633608436665,
+          "stop" : 1633608438003,
+          "duration" : 1338
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And \"List\" table does not contain lines",
+          "time" : {
+            "start" : 1633608436665,
+            "stop" : 1633608437715,
+            "duration" : 1050
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "a4cd540f2561ec5f",
+            "name" : "table",
+            "source" : "a4cd540f2561ec5f.csv",
+            "type" : "text/csv",
+            "size" : 29
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And \"List\" table contains lines",
+          "time" : {
+            "start" : 1633608437884,
+            "stop" : 1633608438003,
+            "duration" : 119
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "7040df66f45c8c65",
+            "name" : "table",
+            "source" : "7040df66f45c8c65.csv",
+            "type" : "text/csv",
+            "size" : 55
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "* Filter check customers who are suppliers also",
+        "time" : {
+          "start" : 1633608438287,
+          "stop" : 1633608439788,
+          "duration" : 1501
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I set checkbox \"Vendor\"",
+          "time" : {
+            "start" : 1633608438287,
+            "stop" : 1633608438311,
+            "duration" : 24
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Vendor"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And \"List\" table does not contain lines",
+          "time" : {
+            "start" : 1633608438520,
+            "stop" : 1633608439788,
+            "duration" : 1268
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "9c32e3951f078db",
+            "name" : "table",
+            "source" : "9c32e3951f078db.csv",
+            "type" : "text/csv",
+            "size" : 29
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633608439914,
+          "stop" : 1633608439931,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 10,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    }, {
+      "name" : "* Filter check customers in the purchase section",
+      "time" : {
+        "start" : 1633608440117,
+        "stop" : 1633608443183,
+        "duration" : 3066
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "* Open list form",
+        "time" : {
+          "start" : 1633608440117,
+          "stop" : 1633608440329,
+          "duration" : 212
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "When in sections panel I select \"Purchase  - A/P\"",
+          "time" : {
+            "start" : 1633608440117,
+            "stop" : 1633608440133,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Purchase  - A/P"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And in functions panel I select \"Vendors\"",
+          "time" : {
+            "start" : 1633608440322,
+            "stop" : 1633608440329,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Vendors"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "* Check the selection by vendors",
+        "time" : {
+          "start" : 1633608440525,
+          "stop" : 1633608441561,
+          "duration" : 1036
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And \"List\" table contains lines",
+          "time" : {
+            "start" : 1633608440525,
+            "stop" : 1633608441416,
+            "duration" : 891
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "b8f24d923a682742",
+            "name" : "table",
+            "source" : "b8f24d923a682742.csv",
+            "type" : "text/csv",
+            "size" : 55
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And \"List\" table does not contain lines",
+          "time" : {
+            "start" : 1633608441540,
+            "stop" : 1633608441561,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "1f30274a27338534",
+            "name" : "table",
+            "source" : "1f30274a27338534.csv",
+            "type" : "text/csv",
+            "size" : 29
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "* Filter check for vendors that are also customers",
+        "time" : {
+          "start" : 1633608441750,
+          "stop" : 1633608442954,
+          "duration" : 1204
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I set checkbox \"Customer\"",
+          "time" : {
+            "start" : 1633608441750,
+            "stop" : 1633608441766,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Customer"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And \"List\" table does not contain lines",
+          "time" : {
+            "start" : 1633608441948,
+            "stop" : 1633608442954,
+            "duration" : 1006
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "5ffbdb9b6946dec3",
+            "name" : "table",
+            "source" : "5ffbdb9b6946dec3.csv",
+            "type" : "text/csv",
+            "size" : 29
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633608443165,
+          "stop" : 1633608443183,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 10,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    }, {
+      "name" : "* Check filters in the catalog Partners",
+      "time" : {
+        "start" : 1633608443379,
+        "stop" : 1633608453344,
+        "duration" : 9965
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "* Open catalog",
+        "time" : {
+          "start" : 1633608443379,
+          "stop" : 1633608443395,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink \"e1cib/list/Catalog.Partners\"",
+          "time" : {
+            "start" : 1633608443379,
+            "stop" : 1633608443395,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Catalog.Partners"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "* Check the selection by customer",
+        "time" : {
+          "start" : 1633608443578,
+          "stop" : 1633608447459,
+          "duration" : 3881
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I set checkbox \"Customer\"",
+          "time" : {
+            "start" : 1633608443578,
+            "stop" : 1633608445633,
+            "duration" : 2055
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Customer"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And \"List\" table contains lines",
+          "time" : {
+            "start" : 1633608445807,
+            "stop" : 1633608447281,
+            "duration" : 1474
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "2b8e11d76eb088f7",
+            "name" : "table",
+            "source" : "2b8e11d76eb088f7.csv",
+            "type" : "text/csv",
+            "size" : 55
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And \"List\" table does not contain lines",
+          "time" : {
+            "start" : 1633608447430,
+            "stop" : 1633608447459,
+            "duration" : 29
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "54367526a5d92b72",
+            "name" : "table",
+            "source" : "54367526a5d92b72.csv",
+            "type" : "text/csv",
+            "size" : 29
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 3,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "* Check the selection by vendor",
+        "time" : {
+          "start" : 1633608447632,
+          "stop" : 1633608450393,
+          "duration" : 2761
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I remove checkbox \"Customer\"",
+          "time" : {
+            "start" : 1633608447632,
+            "stop" : 1633608447648,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Customer"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I set checkbox \"Vendor\"",
+          "time" : {
+            "start" : 1633608447839,
+            "stop" : 1633608448976,
+            "duration" : 1137
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Vendor"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And \"List\" table does not contain lines",
+          "time" : {
+            "start" : 1633608449260,
+            "stop" : 1633608450101,
+            "duration" : 841
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "d16dc6d522a00823",
+            "name" : "table",
+            "source" : "d16dc6d522a00823.csv",
+            "type" : "text/csv",
+            "size" : 29
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And \"List\" table contains lines",
+          "time" : {
+            "start" : 1633608450277,
+            "stop" : 1633608450393,
+            "duration" : 116
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "250e2581111ab12",
+            "name" : "table",
+            "source" : "250e2581111ab12.csv",
+            "type" : "text/csv",
+            "size" : 55
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 4,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "* Check the selection by employee",
+        "time" : {
+          "start" : 1633608450680,
+          "stop" : 1633608452604,
+          "duration" : 1924
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I remove checkbox \"Vendor\"",
+          "time" : {
+            "start" : 1633608450680,
+            "stop" : 1633608450691,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Vendor"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I set checkbox \"Employee\"",
+          "time" : {
+            "start" : 1633608450883,
+            "stop" : 1633608451651,
+            "duration" : 768
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Employee"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And \"List\" table does not contain lines",
+          "time" : {
+            "start" : 1633608451901,
+            "stop" : 1633608452247,
+            "duration" : 346
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "143ab7ea22e066ec",
+            "name" : "table",
+            "source" : "143ab7ea22e066ec.csv",
+            "type" : "text/csv",
+            "size" : 66
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And \"List\" table contains lines",
+          "time" : {
+            "start" : 1633608452513,
+            "stop" : 1633608452604,
+            "duration" : 91
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "8a40aa5f5c9890f5",
+            "name" : "table",
+            "source" : "8a40aa5f5c9890f5.csv",
+            "type" : "text/csv",
+            "size" : 85
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 4,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "* Check the selection by opponent",
+        "time" : {
+          "start" : 1633608452712,
+          "stop" : 1633608453126,
+          "duration" : 414
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I set checkbox \"Opponent\"",
+          "time" : {
+            "start" : 1633608452712,
+            "stop" : 1633608452724,
+            "duration" : 12
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Opponent"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I remove checkbox \"Employee\"",
+          "time" : {
+            "start" : 1633608452926,
+            "stop" : 1633608452939,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Employee"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then the number of \"List\" table lines is \"равно\" 0",
+          "time" : {
+            "start" : 1633608453117,
+            "stop" : 1633608453126,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "равно"
+          }, {
+            "name" : "Парам3",
+            "value" : "0"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 3,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633608453320,
+          "stop" : 1633608453344,
+          "duration" : 24
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 21,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 6
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 48,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 13
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_0203002 check filters in the partner catalog"
+  }, {
+    "name" : "feature",
+    "value" : "_0915Filters"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "filters"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "Filters"
+  }, {
+    "name" : "package",
+    "value" : "_0915Filters"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "filters", "positive" ]
+  },
+  "source" : "2bee2b525fa4f57f.json",
+  "parameterValues" : [ ]
+}

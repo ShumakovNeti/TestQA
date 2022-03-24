@@ -1,0 +1,881 @@
+{
+  "uid" : "d3fd5cf615b79633",
+  "name" : "_042630 Bundling clear posting/mark for deletion",
+  "historyId" : "check Bundling movements._042630 Bundling clear posting/mark for deletion",
+  "time" : {
+    "start" : 1633605647815,
+    "stop" : 1633605664059,
+    "duration" : 16244
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633605648576,
+        "stop" : 1633605648581,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Select Bundling",
+      "time" : {
+        "start" : 1633605648791,
+        "stop" : 1633605649130,
+        "duration" : 339
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.Bundling\"",
+        "time" : {
+          "start" : 1633605648791,
+          "stop" : 1633605648796,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.Bundling"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633605648988,
+          "stop" : 1633605649130,
+          "duration" : 142
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "28dcb64a41f9e609",
+          "name" : "table",
+          "source" : "28dcb64a41f9e609.csv",
+          "type" : "text/csv",
+          "size" : 18
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Clear posting",
+      "time" : {
+        "start" : 1633605649398,
+        "stop" : 1633605652251,
+        "duration" : 2853
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And in the table \"List\" I click the button named \"ListContextMenuUndoPosting\"",
+        "time" : {
+          "start" : 1633605649398,
+          "stop" : 1633605649410,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        }, {
+          "name" : "Парам2",
+          "value" : "ListContextMenuUndoPosting"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then user message window does not contain messages",
+        "time" : {
+          "start" : 1633605649602,
+          "stop" : 1633605650184,
+          "duration" : 582
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Registrations report\" button",
+        "time" : {
+          "start" : 1633605650403,
+          "stop" : 1633605650422,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Registrations report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633605650607,
+          "stop" : 1633605650704,
+          "duration" : 97
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then \"ResultTable\" spreadsheet document is equal",
+        "time" : {
+          "start" : 1633605650825,
+          "stop" : 1633605651935,
+          "duration" : 1110
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "897c22591e7337b",
+          "name" : "table",
+          "source" : "897c22591e7337b.csv",
+          "type" : "text/csv",
+          "size" : 77
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I close current window",
+        "time" : {
+          "start" : 1633605652239,
+          "stop" : 1633605652251,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Post Bundling",
+      "time" : {
+        "start" : 1633605652439,
+        "stop" : 1633605655519,
+        "duration" : 3080
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.Bundling\"",
+        "time" : {
+          "start" : 1633605652439,
+          "stop" : 1633605652456,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.Bundling"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633605652678,
+          "stop" : 1633605652689,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "6179b94cd7fed1f1",
+          "name" : "table",
+          "source" : "6179b94cd7fed1f1.csv",
+          "type" : "text/csv",
+          "size" : 18
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And in the table \"List\" I click the button named \"ListContextMenuPost\"",
+        "time" : {
+          "start" : 1633605652854,
+          "stop" : 1633605652864,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        }, {
+          "name" : "Парам2",
+          "value" : "ListContextMenuPost"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then user message window does not contain messages",
+        "time" : {
+          "start" : 1633605653045,
+          "stop" : 1633605653543,
+          "duration" : 498
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Registrations report\" button",
+        "time" : {
+          "start" : 1633605653656,
+          "stop" : 1633605653671,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Registrations report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633605653858,
+          "stop" : 1633605653962,
+          "duration" : 104
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then \"ResultTable\" spreadsheet document contains values",
+        "time" : {
+          "start" : 1633605654099,
+          "stop" : 1633605655320,
+          "duration" : 1221
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "6ed8d268057815e3",
+          "name" : "table",
+          "source" : "6ed8d268057815e3.csv",
+          "type" : "text/csv",
+          "size" : 47
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633605655482,
+          "stop" : 1633605655519,
+          "duration" : 37
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 8,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "* Mark for deletion",
+      "time" : {
+        "start" : 1633605655708,
+        "stop" : 1633605659557,
+        "duration" : 3849
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.Bundling\"",
+        "time" : {
+          "start" : 1633605655708,
+          "stop" : 1633605655718,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.Bundling"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633605655866,
+          "stop" : 1633605656073,
+          "duration" : 207
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "1422dd62401611c",
+          "name" : "table",
+          "source" : "1422dd62401611c.csv",
+          "type" : "text/csv",
+          "size" : 18
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And in the table \"List\" I click the button named \"ListContextMenuSetDeletionMark\"",
+        "time" : {
+          "start" : 1633605656298,
+          "stop" : 1633605656312,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        }, {
+          "name" : "Парам2",
+          "value" : "ListContextMenuSetDeletionMark"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then \"1C:Enterprise\" window is opened",
+        "time" : {
+          "start" : 1633605656503,
+          "stop" : 1633605656508,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "1C:Enterprise"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Yes\" button",
+        "time" : {
+          "start" : 1633605656703,
+          "stop" : 1633605656717,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Yes"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then user message window does not contain messages",
+        "time" : {
+          "start" : 1633605656903,
+          "stop" : 1633605657750,
+          "duration" : 847
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Registrations report\" button",
+        "time" : {
+          "start" : 1633605657933,
+          "stop" : 1633605657948,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Registrations report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633605658127,
+          "stop" : 1633605658219,
+          "duration" : 92
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then \"ResultTable\" spreadsheet document is equal",
+        "time" : {
+          "start" : 1633605658327,
+          "stop" : 1633605659379,
+          "duration" : 1052
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "106f87dd477d8a28",
+          "name" : "table",
+          "source" : "106f87dd477d8a28.csv",
+          "type" : "text/csv",
+          "size" : 77
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I close current window",
+        "time" : {
+          "start" : 1633605659546,
+          "stop" : 1633605659557,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 10,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "* Unmark for deletion and post document",
+      "time" : {
+        "start" : 1633605659747,
+        "stop" : 1633605664059,
+        "duration" : 4312
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.Bundling\"",
+        "time" : {
+          "start" : 1633605659747,
+          "stop" : 1633605659755,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.Bundling"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633605659954,
+          "stop" : 1633605659967,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "f82c093aa4810a62",
+          "name" : "table",
+          "source" : "f82c093aa4810a62.csv",
+          "type" : "text/csv",
+          "size" : 18
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And in the table \"List\" I click the button named \"ListContextMenuSetDeletionMark\"",
+        "time" : {
+          "start" : 1633605660153,
+          "stop" : 1633605660164,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        }, {
+          "name" : "Парам2",
+          "value" : "ListContextMenuSetDeletionMark"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then \"1C:Enterprise\" window is opened",
+        "time" : {
+          "start" : 1633605660363,
+          "stop" : 1633605660368,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "1C:Enterprise"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Yes\" button",
+        "time" : {
+          "start" : 1633605660575,
+          "stop" : 1633605660588,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Yes"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then user message window does not contain messages",
+        "time" : {
+          "start" : 1633605660776,
+          "stop" : 1633605661059,
+          "duration" : 283
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And in the table \"List\" I click the button named \"ListContextMenuPost\"",
+        "time" : {
+          "start" : 1633605661170,
+          "stop" : 1633605661180,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        }, {
+          "name" : "Парам2",
+          "value" : "ListContextMenuPost"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then user message window does not contain messages",
+        "time" : {
+          "start" : 1633605661380,
+          "stop" : 1633605661813,
+          "duration" : 433
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Registrations report\" button",
+        "time" : {
+          "start" : 1633605661982,
+          "stop" : 1633605662011,
+          "duration" : 29
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Registrations report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633605662189,
+          "stop" : 1633605662375,
+          "duration" : 186
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then \"ResultTable\" spreadsheet document contains values",
+        "time" : {
+          "start" : 1633605662622,
+          "stop" : 1633605663753,
+          "duration" : 1131
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "312c033a421d56cf",
+          "name" : "table",
+          "source" : "312c033a421d56cf.csv",
+          "type" : "text/csv",
+          "size" : 47
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633605664029,
+          "stop" : 1633605664059,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 12,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 44,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 8
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_042630 Bundling clear posting/mark for deletion"
+  }, {
+    "name" : "feature",
+    "value" : "_0400 Movements"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "movementsbundling"
+  }, {
+    "name" : "tag",
+    "value" : "movements"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "Movements"
+  }, {
+    "name" : "package",
+    "value" : "_0400 Movements"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "movementsbundling", "tree", "movements", "positive" ]
+  },
+  "source" : "d3fd5cf615b79633.json",
+  "parameterValues" : [ ]
+}

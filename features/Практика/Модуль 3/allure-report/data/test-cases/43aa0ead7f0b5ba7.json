@@ -1,0 +1,209 @@
+{
+  "uid" : "43aa0ead7f0b5ba7",
+  "name" : "_054018 check message output in case the user tries to create Cash payment again by Cash transfer order",
+  "historyId" : "create cash transfer._054018 check message output in case the user tries to create Cash payment again by Cash transfer order",
+  "time" : {
+    "start" : 1633606806884,
+    "stop" : 1633606809934,
+    "duration" : 3050
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "* Open the list Cash transfer order",
+      "time" : {
+        "start" : 1633606807689,
+        "stop" : 1633606807697,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.CashTransferOrder\"",
+        "time" : {
+          "start" : 1633606807689,
+          "stop" : 1633606807697,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.CashTransferOrder"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Select Cash transfer order",
+      "time" : {
+        "start" : 1633606807883,
+        "stop" : 1633606808150,
+        "duration" : 267
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633606807883,
+          "stop" : 1633606808150,
+          "duration" : 267
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "d33d9dc67e298229",
+          "name" : "table",
+          "source" : "d33d9dc67e298229.csv",
+          "type" : "text/csv",
+          "size" : 100
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Trying to create Cash payment and check message output",
+      "time" : {
+        "start" : 1633606808287,
+        "stop" : 1633606809934,
+        "duration" : 1647
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I click the button named \"FormDocumentCashPaymentGenerateCashPayment\"",
+        "time" : {
+          "start" : 1633606808287,
+          "stop" : 1633606808302,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormDocumentCashPaymentGenerateCashPayment"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then I wait that in user messages the 'The total amount of the \"Cash transfer order\" document(s) is already paid on the basis of the \"Cash payment\" document(s).' substring will appear in 30 seconds",
+        "time" : {
+          "start" : 1633606808492,
+          "stop" : 1633606809732,
+          "duration" : 1240
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "The total amount of the \"Cash transfer order\" document(s) is already paid on the basis of the \"Cash payment\" document(s)."
+        }, {
+          "name" : "Парам2",
+          "value" : "30"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633606809911,
+          "stop" : 1633606809934,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 8,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_054018 check message output in case the user tries to create Cash payment again by Cash transfer order"
+  }, {
+    "name" : "feature",
+    "value" : "_0500 Cash management"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "cashmanagement"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "CashManagement"
+  }, {
+    "name" : "package",
+    "value" : "_0500 Cash management"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "cashmanagement", "tree", "positive" ]
+  },
+  "source" : "43aa0ead7f0b5ba7.json",
+  "parameterValues" : [ ]
+}

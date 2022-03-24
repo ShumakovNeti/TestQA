@@ -1,0 +1,239 @@
+{
+  "uid" : "c84f775a2c223b5e",
+  "name" : "_040332 check Inventory transfer order movements by the Register  \"R4035 Incoming stocks\"",
+  "historyId" : "check Inventory transfer order movements._040332 check Inventory transfer order movements by the Register  \"R4035 Incoming stocks\"",
+  "time" : {
+    "start" : 1633604051812,
+    "stop" : 1633604055675,
+    "duration" : 3863
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "* Select Inventory transfer order",
+      "time" : {
+        "start" : 1633604052600,
+        "stop" : 1633604053253,
+        "duration" : 653
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.InventoryTransferOrder\"",
+        "time" : {
+          "start" : 1633604052600,
+          "stop" : 1633604052615,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.InventoryTransferOrder"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633604052821,
+          "stop" : 1633604053253,
+          "duration" : 432
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "2cc5ecca36a5ad92",
+          "name" : "table",
+          "source" : "2cc5ecca36a5ad92.csv",
+          "type" : "text/csv",
+          "size" : 19
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check movements by the Register  \"R4035 Incoming stocks\"",
+      "time" : {
+        "start" : 1633604053405,
+        "stop" : 1633604055675,
+        "duration" : 2270
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I click \"Registrations report\" button",
+        "time" : {
+          "start" : 1633604053405,
+          "stop" : 1633604053419,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Registrations report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select \"R4035 Incoming stocks\" exact value from \"Register\" drop-down list",
+        "time" : {
+          "start" : 1633604053605,
+          "stop" : 1633604053963,
+          "duration" : 358
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Register"
+        }, {
+          "name" : "Парам2",
+          "value" : "R4035 Incoming stocks"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633604054229,
+          "stop" : 1633604054248,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then \"ResultTable\" spreadsheet document is equal",
+        "time" : {
+          "start" : 1633604054422,
+          "stop" : 1633604055441,
+          "duration" : 1019
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "3be1133ff5d55c57",
+          "name" : "table",
+          "source" : "3be1133ff5d55c57.csv",
+          "type" : "text/csv",
+          "size" : 477
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633604055639,
+          "stop" : 1633604055675,
+          "duration" : 36
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 9,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_040332 check Inventory transfer order movements by the Register  \"R4035 Incoming stocks\""
+  }, {
+    "name" : "feature",
+    "value" : "_0400 Movements"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "movementsinventorytransferorder"
+  }, {
+    "name" : "tag",
+    "value" : "movements"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "Movements"
+  }, {
+    "name" : "package",
+    "value" : "_0400 Movements"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "movementsinventorytransferorder", "movements", "positive" ]
+  },
+  "source" : "c84f775a2c223b5e.json",
+  "parameterValues" : [ ]
+}

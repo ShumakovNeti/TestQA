@@ -1,0 +1,239 @@
+{
+  "uid" : "b5b697b82e2be043",
+  "name" : "_0401316 check Sales invoice movements by the Register  \"R2022 Customers payment planning\" (use Aging, Receipt)",
+  "historyId" : "check Sales invoice movements._0401316 check Sales invoice movements by the Register  \"R2022 Customers payment planning\" (use Aging, Receipt)",
+  "time" : {
+    "start" : 1633603271792,
+    "stop" : 1633603276478,
+    "duration" : 4686
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "* Select Sales invoice",
+      "time" : {
+        "start" : 1633603272571,
+        "stop" : 1633603273728,
+        "duration" : 1157
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.SalesInvoice\"",
+        "time" : {
+          "start" : 1633603272571,
+          "stop" : 1633603272580,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.SalesInvoice"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633603272779,
+          "stop" : 1633603273728,
+          "duration" : 949
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "5b9cf370eb73186",
+          "name" : "table",
+          "source" : "5b9cf370eb73186.csv",
+          "type" : "text/csv",
+          "size" : 18
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check movements by the Register  \"R2022 Customers payment planning\"",
+      "time" : {
+        "start" : 1633603273994,
+        "stop" : 1633603276478,
+        "duration" : 2484
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I click \"Registrations report\" button",
+        "time" : {
+          "start" : 1633603273994,
+          "stop" : 1633603274012,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Registrations report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select \"R2022 Customers payment planning\" exact value from \"Register\" drop-down list",
+        "time" : {
+          "start" : 1633603274212,
+          "stop" : 1633603274642,
+          "duration" : 430
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Register"
+        }, {
+          "name" : "Парам2",
+          "value" : "R2022 Customers payment planning"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633603274809,
+          "stop" : 1633603274827,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then \"ResultTable\" spreadsheet document is equal",
+        "time" : {
+          "start" : 1633603275012,
+          "stop" : 1633603276157,
+          "duration" : 1145
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "c4ed22e9dabde621",
+          "name" : "table",
+          "source" : "c4ed22e9dabde621.csv",
+          "type" : "text/csv",
+          "size" : 548
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633603276446,
+          "stop" : 1633603276478,
+          "duration" : 32
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 9,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_0401316 check Sales invoice movements by the Register  \"R2022 Customers payment planning\" (use Aging, Receipt)"
+  }, {
+    "name" : "feature",
+    "value" : "_0400 Movements"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "movementssalesinvoice"
+  }, {
+    "name" : "tag",
+    "value" : "movements"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "Movements"
+  }, {
+    "name" : "package",
+    "value" : "_0400 Movements"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "movementssalesinvoice", "tree", "movements", "positive" ]
+  },
+  "source" : "b5b697b82e2be043.json",
+  "parameterValues" : [ ]
+}

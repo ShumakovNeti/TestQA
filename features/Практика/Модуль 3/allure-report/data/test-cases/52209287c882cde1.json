@@ -1,0 +1,653 @@
+{
+  "uid" : "52209287c882cde1",
+  "name" : "_029904 create Shipment confirmation for SO without reserve and check its movements (SO-SC-SI)",
+  "historyId" : "create Sales order without reserve and check shipment._029904 create Shipment confirmation for SO without reserve and check its movements (SO-SC-SI)",
+  "time" : {
+    "start" : 1633612119931,
+    "stop" : 1633612130728,
+    "duration" : 10797
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633612120720,
+        "stop" : 1633612120726,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Create SC",
+      "time" : {
+        "start" : 1633612120912,
+        "stop" : 1633612123794,
+        "duration" : 2882
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.SalesOrder\"",
+        "time" : {
+          "start" : 1633612120912,
+          "stop" : 1633612120918,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.SalesOrder"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633612121116,
+          "stop" : 1633612121295,
+          "duration" : 179
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "44373ecacbc9a1ed",
+          "name" : "table",
+          "source" : "44373ecacbc9a1ed.csv",
+          "type" : "text/csv",
+          "size" : 20
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I click the button named \"FormDocumentShipmentConfirmationGenerate\"",
+        "time" : {
+          "start" : 1633612121523,
+          "stop" : 1633612121539,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormDocumentShipmentConfirmationGenerate"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Ok\" button",
+        "time" : {
+          "start" : 1633612121730,
+          "stop" : 1633612121749,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Ok"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click the button named \"FormPost\"",
+        "time" : {
+          "start" : 1633612121936,
+          "stop" : 1633612122285,
+          "duration" : 349
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormPost"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I delete \"$$NumberShipmentConfirmation029903$$\" variable",
+        "time" : {
+          "start" : 1633612122543,
+          "stop" : 1633612122550,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "$$NumberShipmentConfirmation029903$$"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I delete \"$$ShipmentConfirmation029903$$\" variable",
+        "time" : {
+          "start" : 1633612122744,
+          "stop" : 1633612122748,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "$$ShipmentConfirmation029903$$"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I delete \"$$DateShipmentConfirmation029903$$\" variable",
+        "time" : {
+          "start" : 1633612122948,
+          "stop" : 1633612122955,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "$$DateShipmentConfirmation029903$$"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I save the value of \"Number\" field as \"$$NumberShipmentConfirmation029903$$\"",
+        "time" : {
+          "start" : 1633612123152,
+          "stop" : 1633612123167,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Number"
+        }, {
+          "name" : "Парам2",
+          "value" : "$$NumberShipmentConfirmation029903$$"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I save the window as \"$$ShipmentConfirmation029903$$\"",
+        "time" : {
+          "start" : 1633612123357,
+          "stop" : 1633612123364,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "$$ShipmentConfirmation029903$$"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I save the value of the field named \"Date\" as  \"$$DateShipmentConfirmation029903$$\"",
+        "time" : {
+          "start" : 1633612123564,
+          "stop" : 1633612123576,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Date"
+        }, {
+          "name" : "Парам2",
+          "value" : "$$DateShipmentConfirmation029903$$"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Registrations report\" button",
+        "time" : {
+          "start" : 1633612123780,
+          "stop" : 1633612123794,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Registrations report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 12,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check SC movements Register  \"Register  \"R4010 Actual stocks\")",
+      "time" : {
+        "start" : 1633612123960,
+        "stop" : 1633612125602,
+        "duration" : 1642
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I select \"R4010 Actual stocks\" exact value from \"Register\" drop-down list",
+        "time" : {
+          "start" : 1633612123960,
+          "stop" : 1633612124129,
+          "duration" : 169
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Register"
+        }, {
+          "name" : "Парам2",
+          "value" : "R4010 Actual stocks"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633612124370,
+          "stop" : 1633612124388,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"ResultTable\" spreadsheet document contains lines:",
+        "time" : {
+          "start" : 1633612124576,
+          "stop" : 1633612125602,
+          "duration" : 1026
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "9acb3f46dd3b374a",
+          "name" : "table",
+          "source" : "9acb3f46dd3b374a.csv",
+          "type" : "text/csv",
+          "size" : 432
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check SC movements Register  \"R2031 Shipment invoicing\"",
+      "time" : {
+        "start" : 1633612125792,
+        "stop" : 1633612127227,
+        "duration" : 1435
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I select \"R2031 Shipment invoicing\" exact value from \"Register\" drop-down list",
+        "time" : {
+          "start" : 1633612125792,
+          "stop" : 1633612125820,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Register"
+        }, {
+          "name" : "Парам2",
+          "value" : "R2031 Shipment invoicing"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633612125992,
+          "stop" : 1633612126011,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"ResultTable\" spreadsheet document contains lines:",
+        "time" : {
+          "start" : 1633612126196,
+          "stop" : 1633612127227,
+          "duration" : 1031
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "b1dccff00fcd594d",
+          "name" : "table",
+          "source" : "b1dccff00fcd594d.csv",
+          "type" : "text/csv",
+          "size" : 602
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check SC movements Register  \"R2011 Shipment of sales orders\"",
+      "time" : {
+        "start" : 1633612127414,
+        "stop" : 1633612128853,
+        "duration" : 1439
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I select \"R2011 Shipment of sales orders\" exact value from \"Register\" drop-down list",
+        "time" : {
+          "start" : 1633612127414,
+          "stop" : 1633612127437,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Register"
+        }, {
+          "name" : "Парам2",
+          "value" : "R2011 Shipment of sales orders"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633612127626,
+          "stop" : 1633612127645,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"ResultTable\" spreadsheet document contains lines:",
+        "time" : {
+          "start" : 1633612127828,
+          "stop" : 1633612128853,
+          "duration" : 1025
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "f3abb26550cc7ed4",
+          "name" : "table",
+          "source" : "f3abb26550cc7ed4.csv",
+          "type" : "text/csv",
+          "size" : 550
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check SC movements Register  \"R4011B_FreeStocks\")",
+      "time" : {
+        "start" : 1633612129044,
+        "stop" : 1633612130480,
+        "duration" : 1436
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I select \"R4011 Free stocks\" exact value from \"Register\" drop-down list",
+        "time" : {
+          "start" : 1633612129044,
+          "stop" : 1633612129068,
+          "duration" : 24
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Register"
+        }, {
+          "name" : "Парам2",
+          "value" : "R4011 Free stocks"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633612129240,
+          "stop" : 1633612129259,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"ResultTable\" spreadsheet document contains lines:",
+        "time" : {
+          "start" : 1633612129456,
+          "stop" : 1633612130480,
+          "duration" : 1024
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "5a1d4b2760644990",
+          "name" : "table",
+          "source" : "5a1d4b2760644990.csv",
+          "type" : "text/csv",
+          "size" : 392
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633612130673,
+        "stop" : 1633612130728,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 31,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_029904 create Shipment confirmation for SO without reserve and check its movements (SO-SC-SI)"
+  }, {
+    "name" : "feature",
+    "value" : "_0299 SalesProcurementMethods"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "salesorderprocurement"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "SalesOrderProcurement"
+  }, {
+    "name" : "package",
+    "value" : "_0299 SalesProcurementMethods"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "positive", "salesorderprocurement" ]
+  },
+  "source" : "52209287c882cde1.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,299 @@
+{
+  "uid" : "41db1d484395643a",
+  "name" : "_2067016 delete linked string in the ISR (one session)",
+  "historyId" : "locking linked strings (ISR,ITO,IT)._2067016 delete linked string in the ISR (one session)",
+  "time" : {
+    "start" : 1633610221176,
+    "stop" : 1633610227280,
+    "duration" : 6104
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "* Open ISR",
+      "time" : {
+        "start" : 1633610221341,
+        "stop" : 1633610222179,
+        "duration" : 838
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.InternalSupplyRequest\"",
+        "time" : {
+          "start" : 1633610221341,
+          "stop" : 1633610221347,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.InternalSupplyRequest"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633610221550,
+          "stop" : 1633610221912,
+          "duration" : 362
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "b5736791589623b1",
+          "name" : "table",
+          "source" : "b5736791589623b1.csv",
+          "type" : "text/csv",
+          "size" : 19
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633610222154,
+          "stop" : 1633610222179,
+          "duration" : 25
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Delete linked string",
+      "time" : {
+        "start" : 1633610222394,
+        "stop" : 1633610227280,
+        "duration" : 4886
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I go to line in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610222394,
+          "stop" : 1633610222586,
+          "duration" : 192
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "2f92474bc89e1f58",
+          "name" : "table",
+          "source" : "2f92474bc89e1f58.csv",
+          "type" : "text/csv",
+          "size" : 20
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610222766,
+          "stop" : 1633610222775,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And in the table \"ItemList\" I click \"Delete\" button",
+        "time" : {
+          "start" : 1633610222970,
+          "stop" : 1633610222987,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        }, {
+          "name" : "Парам2",
+          "value" : "Delete"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"ItemList\" table contains lines",
+        "time" : {
+          "start" : 1633610223173,
+          "stop" : 1633610223538,
+          "duration" : 365
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "afc1659f53e4b349",
+          "name" : "table",
+          "source" : "afc1659f53e4b349.csv",
+          "type" : "text/csv",
+          "size" : 20
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And Delay 3",
+        "time" : {
+          "start" : 1633610223790,
+          "stop" : 1633610226833,
+          "duration" : 3043
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "3"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then there are lines in TestClient message log",
+        "time" : {
+          "start" : 1633610227053,
+          "stop" : 1633610227073,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "647d0c7d7cc97098",
+          "name" : "table",
+          "source" : "647d0c7d7cc97098.csv",
+          "type" : "text/csv",
+          "size" : 53
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633610227233,
+          "stop" : 1633610227280,
+          "duration" : 47
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 7,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 12,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_2067016 delete linked string in the ISR (one session)"
+  }, {
+    "name" : "feature",
+    "value" : "_0950 LinkedTransaction"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "linkedtransaction"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "LinkedTransaction"
+  }, {
+    "name" : "package",
+    "value" : "_0950 LinkedTransaction"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "linkedtransaction", "positive" ]
+  },
+  "source" : "41db1d484395643a.json",
+  "parameterValues" : [ ]
+}

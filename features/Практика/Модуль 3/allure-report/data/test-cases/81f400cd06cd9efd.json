@@ -1,0 +1,254 @@
+{
+  "uid" : "81f400cd06cd9efd",
+  "name" : "_040187 check Shipment confirmation movements by the Register  \"R4032 Goods in transit (outgoing)\" (SC first)",
+  "historyId" : "check Shipment confirmation._040187 check Shipment confirmation movements by the Register  \"R4032 Goods in transit (outgoing)\" (SC first)",
+  "time" : {
+    "start" : 1633603460685,
+    "stop" : 1633603464372,
+    "duration" : 3687
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "* Select Shipment confirmation",
+      "time" : {
+        "start" : 1633603461488,
+        "stop" : 1633603462051,
+        "duration" : 563
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633603461488,
+          "stop" : 1633603461494,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.ShipmentConfirmation\"",
+        "time" : {
+          "start" : 1633603461685,
+          "stop" : 1633603461692,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.ShipmentConfirmation"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633603461888,
+          "stop" : 1633603462051,
+          "duration" : 163
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "880cf6d3adbab8b3",
+          "name" : "table",
+          "source" : "880cf6d3adbab8b3.csv",
+          "type" : "text/csv",
+          "size" : 18
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check movements by the Register  \"R4032 Goods in transit (outgoing)\"",
+      "time" : {
+        "start" : 1633603462294,
+        "stop" : 1633603464372,
+        "duration" : 2078
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I click \"Registrations report\" button",
+        "time" : {
+          "start" : 1633603462294,
+          "stop" : 1633603462311,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Registrations report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select \"R4032 Goods in transit (outgoing)\" exact value from \"Register\" drop-down list",
+        "time" : {
+          "start" : 1633603462499,
+          "stop" : 1633603462660,
+          "duration" : 161
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Register"
+        }, {
+          "name" : "Парам2",
+          "value" : "R4032 Goods in transit (outgoing)"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633603462905,
+          "stop" : 1633603462922,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then \"ResultTable\" spreadsheet document is equal",
+        "time" : {
+          "start" : 1633603463109,
+          "stop" : 1633603464132,
+          "duration" : 1023
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "bdb88b0f5d93e531",
+          "name" : "table",
+          "source" : "bdb88b0f5d93e531.csv",
+          "type" : "text/csv",
+          "size" : 529
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633603464335,
+          "stop" : 1633603464372,
+          "duration" : 37
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 10,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_040187 check Shipment confirmation movements by the Register  \"R4032 Goods in transit (outgoing)\" (SC first)"
+  }, {
+    "name" : "feature",
+    "value" : "_0400 Movements"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "movementsshipmentconfirmation"
+  }, {
+    "name" : "tag",
+    "value" : "movements"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "Movements"
+  }, {
+    "name" : "package",
+    "value" : "_0400 Movements"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "movementsshipmentconfirmation", "tree", "movements", "positive" ]
+  },
+  "source" : "81f400cd06cd9efd.json",
+  "parameterValues" : [ ]
+}

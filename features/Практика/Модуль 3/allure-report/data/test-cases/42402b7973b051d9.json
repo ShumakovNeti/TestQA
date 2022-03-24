@@ -1,0 +1,740 @@
+{
+  "uid" : "42402b7973b051d9",
+  "name" : "_051001 create Cash payment based on Purchase invoice",
+  "historyId" : "create Cash payment._051001 create Cash payment based on Purchase invoice",
+  "time" : {
+    "start" : 1633606928111,
+    "stop" : 1633606941281,
+    "duration" : 13170
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "* Open list form Purchase invoice and select PI №1",
+      "time" : {
+        "start" : 1633606928854,
+        "stop" : 1633606930068,
+        "duration" : 1214
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.PurchaseInvoice\"",
+        "time" : {
+          "start" : 1633606928854,
+          "stop" : 1633606928860,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.PurchaseInvoice"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633606929040,
+          "stop" : 1633606929811,
+          "duration" : 771
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "367d5f046eed9b96",
+          "name" : "table",
+          "source" : "367d5f046eed9b96.csv",
+          "type" : "text/csv",
+          "size" : 18
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I click the button named \"FormDocumentCashPaymentGenerateCashPayment\"",
+        "time" : {
+          "start" : 1633606930057,
+          "stop" : 1633606930068,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormDocumentCashPaymentGenerateCashPayment"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Create and filling in Purchase invoice",
+      "time" : {
+        "start" : 1633606930257,
+        "stop" : 1633606933964,
+        "duration" : 3707
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Then the form attribute named \"Company\" became equal to \"Main Company\"",
+        "time" : {
+          "start" : 1633606930257,
+          "stop" : 1633606932081,
+          "duration" : 1824
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Company"
+        }, {
+          "name" : "Парам2",
+          "value" : "Main Company"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then the form attribute named \"TransactionType\" became equal to \"Payment to the vendor\"",
+        "time" : {
+          "start" : 1633606932290,
+          "stop" : 1633606932299,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "TransactionType"
+        }, {
+          "name" : "Парам2",
+          "value" : "Payment to the vendor"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then the form attribute named \"Currency\" became equal to \"TRY\"",
+        "time" : {
+          "start" : 1633606932492,
+          "stop" : 1633606932502,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Currency"
+        }, {
+          "name" : "Парам2",
+          "value" : "TRY"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"PaymentList\" table contains lines",
+        "time" : {
+          "start" : 1633606932697,
+          "stop" : 1633606933413,
+          "duration" : 716
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "cd02cf8efa33ed08",
+          "name" : "table",
+          "source" : "cd02cf8efa33ed08.csv",
+          "type" : "text/csv",
+          "size" : 178
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And \"PaymentListCurrencies\" table contains lines",
+        "time" : {
+          "start" : 1633606933715,
+          "stop" : 1633606933964,
+          "duration" : 249
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "bf8cdcb6183e3ad6",
+          "name" : "table",
+          "source" : "bf8cdcb6183e3ad6.csv",
+          "type" : "text/csv",
+          "size" : 83
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentListCurrencies"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "* Data overflow check",
+      "time" : {
+        "start" : 1633606934119,
+        "stop" : 1633606937071,
+        "duration" : 2952
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I click Select button of \"Cash account\" field",
+        "time" : {
+          "start" : 1633606934119,
+          "stop" : 1633606934142,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Cash account"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633606934327,
+          "stop" : 1633606934600,
+          "duration" : 273
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "2775aae54d7bd042",
+          "name" : "table",
+          "source" : "2775aae54d7bd042.csv",
+          "type" : "text/csv",
+          "size" : 36
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633606934730,
+          "stop" : 1633606934736,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then the form attribute named \"Company\" became equal to \"Main Company\"",
+        "time" : {
+          "start" : 1633606934931,
+          "stop" : 1633606935544,
+          "duration" : 613
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Company"
+        }, {
+          "name" : "Парам2",
+          "value" : "Main Company"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then the form attribute named \"CashAccount\" became equal to \"Cash desk №2\"",
+        "time" : {
+          "start" : 1633606935746,
+          "stop" : 1633606935754,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashAccount"
+        }, {
+          "name" : "Парам2",
+          "value" : "Cash desk №2"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then the form attribute named \"TransactionType\" became equal to \"Payment to the vendor\"",
+        "time" : {
+          "start" : 1633606935944,
+          "stop" : 1633606935952,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "TransactionType"
+        }, {
+          "name" : "Парам2",
+          "value" : "Payment to the vendor"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"PaymentList\" table contains lines",
+        "time" : {
+          "start" : 1633606936153,
+          "stop" : 1633606936759,
+          "duration" : 606
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "c322e2deb2850cfd",
+          "name" : "table",
+          "source" : "c322e2deb2850cfd.csv",
+          "type" : "text/csv",
+          "size" : 178
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And \"PaymentListCurrencies\" table contains lines",
+        "time" : {
+          "start" : 1633606936964,
+          "stop" : 1633606937071,
+          "duration" : 107
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "cdae821167b340ba",
+          "name" : "table",
+          "source" : "cdae821167b340ba.csv",
+          "type" : "text/csv",
+          "size" : 170
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentListCurrencies"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 8,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    }, {
+      "name" : "* Check calculation Document amount",
+      "time" : {
+        "start" : 1633606937379,
+        "stop" : 1633606937390,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Then the form attribute named \"DocumentAmount\" became equal to \"137 000,00\"",
+        "time" : {
+          "start" : 1633606937379,
+          "stop" : 1633606937390,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "DocumentAmount"
+        }, {
+          "name" : "Парам2",
+          "value" : "137 000,00"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Change in basis document",
+      "time" : {
+        "start" : 1633606937570,
+        "stop" : 1633606939212,
+        "duration" : 1642
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I select current line in \"PaymentList\" table",
+        "time" : {
+          "start" : 1633606937570,
+          "stop" : 1633606937585,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click choice button of \"Basis document\" attribute in \"PaymentList\" table",
+        "time" : {
+          "start" : 1633606937777,
+          "stop" : 1633606937918,
+          "duration" : 141
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentList"
+        }, {
+          "name" : "Парам2",
+          "value" : "Basis document"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633606938191,
+          "stop" : 1633606938720,
+          "duration" : 529
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "7cb579bee6395aa9",
+          "name" : "table",
+          "source" : "7cb579bee6395aa9.csv",
+          "type" : "text/csv",
+          "size" : 63
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I click \"Select\" button",
+        "time" : {
+          "start" : 1633606938994,
+          "stop" : 1633606939013,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Select"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And in \"PaymentList\" table I move to the next cell",
+        "time" : {
+          "start" : 1633606939203,
+          "stop" : 1633606939212,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Change in payment amount",
+      "time" : {
+        "start" : 1633606939401,
+        "stop" : 1633606941117,
+        "duration" : 1716
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I activate field named \"PaymentListAmount\" in \"PaymentList\" table",
+        "time" : {
+          "start" : 1633606939401,
+          "stop" : 1633606939418,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentList"
+        }, {
+          "name" : "Парам2",
+          "value" : "PaymentListAmount"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select current line in \"PaymentList\" table",
+        "time" : {
+          "start" : 1633606939611,
+          "stop" : 1633606939621,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I input \"20 000,00\" text in the field named \"PaymentListAmount\" of \"PaymentList\" table",
+        "time" : {
+          "start" : 1633606939807,
+          "stop" : 1633606939830,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentList"
+        }, {
+          "name" : "Парам2",
+          "value" : "PaymentListAmount"
+        }, {
+          "name" : "Парам3",
+          "value" : "20 000,00"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I finish line editing in \"PaymentList\" table",
+        "time" : {
+          "start" : 1633606940015,
+          "stop" : 1633606940023,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"PaymentList\" table contains lines",
+        "time" : {
+          "start" : 1633606940212,
+          "stop" : 1633606941117,
+          "duration" : 905
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "be3fd22bb613ff5c",
+          "name" : "table",
+          "source" : "be3fd22bb613ff5c.csv",
+          "type" : "text/csv",
+          "size" : 177
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633606941226,
+        "stop" : 1633606941281,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 34,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 8
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_051001 create Cash payment based on Purchase invoice"
+  }, {
+    "name" : "feature",
+    "value" : "_0500 Cash management"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "bankcashdocuments"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "BankCashDocuments"
+  }, {
+    "name" : "package",
+    "value" : "_0500 Cash management"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "bankcashdocuments", "tree", "positive" ]
+  },
+  "source" : "42402b7973b051d9.json",
+  "parameterValues" : [ ]
+}

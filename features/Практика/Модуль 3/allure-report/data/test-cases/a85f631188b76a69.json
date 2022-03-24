@@ -1,0 +1,404 @@
+{
+  "uid" : "a85f631188b76a69",
+  "name" : "_050011 check currency selection in Cash receipt document in case the currency is specified in the account",
+  "historyId" : "create Cash receipt._050011 check currency selection in Cash receipt document in case the currency is specified in the account",
+  "time" : {
+    "start" : 1633606771722,
+    "stop" : 1633606779366,
+    "duration" : 7644
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I open hyperlink \"e1cib/list/Document.CashReceipt\"",
+      "time" : {
+        "start" : 1633606772631,
+        "stop" : 1633606772641,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Document.CashReceipt"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I click the button named \"FormCreate\"",
+      "time" : {
+        "start" : 1633606772835,
+        "stop" : 1633606773162,
+        "duration" : 327
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormCreate"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When check the choice of currency in the cash payment document if the currency is indicated in the account",
+      "time" : {
+        "start" : 1633606773447,
+        "stop" : 1633606779186,
+        "duration" : 5739
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I click Select button of \"Company\" field",
+        "time" : {
+          "start" : 1633606773447,
+          "stop" : 1633606774228,
+          "duration" : 781
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Company"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633606774458,
+          "stop" : 1633606775565,
+          "duration" : 1107
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click Select button of \"Cash account\" field",
+        "time" : {
+          "start" : 1633606775679,
+          "stop" : 1633606776295,
+          "duration" : 616
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Cash account"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633606776499,
+          "stop" : 1633606776718,
+          "duration" : 219
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "e002aa28080ca3ff",
+          "name" : "table",
+          "source" : "e002aa28080ca3ff.csv",
+          "type" : "text/csv",
+          "size" : 36
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633606776900,
+          "stop" : 1633606776908,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then the form attribute named \"Currency\" became equal to \"TRY\"",
+        "time" : {
+          "start" : 1633606777099,
+          "stop" : 1633606777677,
+          "duration" : 578
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Currency"
+        }, {
+          "name" : "Парам2",
+          "value" : "TRY"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "* Change currency from lira to USD",
+        "time" : {
+          "start" : 1633606777914,
+          "stop" : 1633606778331,
+          "duration" : 417
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I click Choice button of the field named \"Currency\"",
+          "time" : {
+            "start" : 1633606777914,
+            "stop" : 1633606777936,
+            "duration" : 22
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Currency"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606778114,
+            "stop" : 1633606778195,
+            "duration" : 81
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "5ae9e2ef0a13b24c",
+            "name" : "table",
+            "source" : "5ae9e2ef0a13b24c.csv",
+            "type" : "text/csv",
+            "size" : 50
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606778322,
+            "stop" : 1633606778331,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 3,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "* Check that the currency of the document has become USD while the Cash account field has cleared",
+        "time" : {
+          "start" : 1633606778524,
+          "stop" : 1633606778937,
+          "duration" : 413
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Then the form attribute named \"Currency\" became equal to \"USD\"",
+          "time" : {
+            "start" : 1633606778524,
+            "stop" : 1633606778813,
+            "duration" : 289
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Currency"
+          }, {
+            "name" : "Парам2",
+            "value" : "USD"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then the form attribute named \"CashAccount\" became equal to \"\"",
+          "time" : {
+            "start" : 1633606778927,
+            "stop" : 1633606778937,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CashAccount"
+          }, {
+            "name" : "Парам2",
+            "value" : ""
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633606779134,
+          "stop" : 1633606779186,
+          "duration" : 52
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 14,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "And I delete \"CashAccounts\" catalog element with the Description_en \"Cash desk №4\"",
+      "time" : {
+        "start" : 1633606779333,
+        "stop" : 1633606779365,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "CashAccounts"
+      }, {
+        "name" : "Парам2",
+        "value" : "Cash desk №4"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 18,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_050011 check currency selection in Cash receipt document in case the currency is specified in the account"
+  }, {
+    "name" : "feature",
+    "value" : "_0500 Cash management"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "bankcashdocuments"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "BankCashDocuments"
+  }, {
+    "name" : "package",
+    "value" : "_0500 Cash management"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "bankcashdocuments", "tree", "positive" ]
+  },
+  "source" : "a85f631188b76a69.json",
+  "parameterValues" : [ ]
+}

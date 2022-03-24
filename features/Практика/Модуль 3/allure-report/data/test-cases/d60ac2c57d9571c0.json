@@ -1,0 +1,149 @@
+{
+  "uid" : "d60ac2c57d9571c0",
+  "name" : "_029205 check movements in the register TM1010B_RowIDMovements",
+  "historyId" : "create Purchase order based on a Sales order._029205 check movements in the register TM1010B_RowIDMovements",
+  "time" : {
+    "start" : 1633611986746,
+    "stop" : 1633611990528,
+    "duration" : 3782
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I open hyperlink \"e1cib/list/AccumulationRegister.TM1010B_RowIDMovements\"",
+      "time" : {
+        "start" : 1633611987659,
+        "stop" : 1633611987666,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/AccumulationRegister.TM1010B_RowIDMovements"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And \"List\" table contains lines",
+      "time" : {
+        "start" : 1633611987908,
+        "stop" : 1633611990162,
+        "duration" : 2254
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "96544a5716cc180a",
+        "name" : "table",
+        "source" : "96544a5716cc180a.csv",
+        "type" : "text/csv",
+        "size" : 13189
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "Then the number of \"List\" table lines is \"равно\" \"72\"",
+      "time" : {
+        "start" : 1633611990305,
+        "stop" : 1633611990400,
+        "duration" : 95
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      }, {
+        "name" : "Парам2",
+        "value" : "равно"
+      }, {
+        "name" : "Парам3",
+        "value" : "72"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633611990509,
+        "stop" : 1633611990527,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_029205 check movements in the register TM1010B_RowIDMovements"
+  }, {
+    "name" : "feature",
+    "value" : "_0299 SalesProcurementMethods"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "salesorderprocurement"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "SalesOrderProcurement"
+  }, {
+    "name" : "package",
+    "value" : "_0299 SalesProcurementMethods"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "positive", "salesorderprocurement" ]
+  },
+  "source" : "d60ac2c57d9571c0.json",
+  "parameterValues" : [ ]
+}

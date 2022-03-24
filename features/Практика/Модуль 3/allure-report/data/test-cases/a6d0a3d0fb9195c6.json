@@ -1,0 +1,722 @@
+{
+  "uid" : "a6d0a3d0fb9195c6",
+  "name" : "_054005 create Cash receipt and Cash payment based on Cash transfer order in the different currency and check movements",
+  "historyId" : "create cash transfer._054005 create Cash receipt and Cash payment based on Cash transfer order in the different currency and check movements",
+  "time" : {
+    "start" : 1633606494069,
+    "stop" : 1633606516013,
+    "duration" : 21944
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I open hyperlink \"e1cib/list/Document.CashTransferOrder\"",
+      "time" : {
+        "start" : 1633606494859,
+        "stop" : 1633606494867,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Document.CashTransferOrder"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1633606495063,
+        "stop" : 1633606495198,
+        "duration" : 135
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "46681e2c49599250",
+        "name" : "table",
+        "source" : "46681e2c49599250.csv",
+        "type" : "text/csv",
+        "size" : 97
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "And I click the button named \"FormDocumentCashPaymentGenerateCashPayment\"",
+      "time" : {
+        "start" : 1633606495468,
+        "stop" : 1633606495481,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormDocumentCashPaymentGenerateCashPayment"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Check the filling of the tabular part",
+      "time" : {
+        "start" : 1633606495674,
+        "stop" : 1633606496872,
+        "duration" : 1198
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And \"PaymentList\" table contains lines",
+        "time" : {
+          "start" : 1633606495674,
+          "stop" : 1633606496872,
+          "duration" : 1198
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "51404b5a7a2920a9",
+          "name" : "table",
+          "source" : "51404b5a7a2920a9.csv",
+          "type" : "text/csv",
+          "size" : 102
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Filling in the employee responsible for curremcy exchange",
+      "time" : {
+        "start" : 1633606497095,
+        "stop" : 1633606497712,
+        "duration" : 617
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I click choice button of \"Partner\" attribute in \"PaymentList\" table",
+        "time" : {
+          "start" : 1633606497095,
+          "stop" : 1633606497124,
+          "duration" : 29
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentList"
+        }, {
+          "name" : "Парам2",
+          "value" : "Partner"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633606497303,
+          "stop" : 1633606497580,
+          "duration" : 277
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "997ae81a0e1b356e",
+          "name" : "table",
+          "source" : "997ae81a0e1b356e.csv",
+          "type" : "text/csv",
+          "size" : 34
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633606497703,
+          "stop" : 1633606497712,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "And I click the button named \"FormPost\"",
+      "time" : {
+        "start" : 1633606497906,
+        "stop" : 1633606498292,
+        "duration" : 386
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormPost"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I delete \"$$NumberCashPayment054005$$\" variable",
+      "time" : {
+        "start" : 1633606498519,
+        "stop" : 1633606498523,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "$$NumberCashPayment054005$$"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I delete \"$$CashPayment054005$$\" variable",
+      "time" : {
+        "start" : 1633606498718,
+        "stop" : 1633606498723,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "$$CashPayment054005$$"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I save the value of \"Number\" field as \"$$NumberCashPayment054005$$\"",
+      "time" : {
+        "start" : 1633606498921,
+        "stop" : 1633606499311,
+        "duration" : 390
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Number"
+      }, {
+        "name" : "Парам2",
+        "value" : "$$NumberCashPayment054005$$"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I save the window as \"$$CashPayment054005$$\"",
+      "time" : {
+        "start" : 1633606499541,
+        "stop" : 1633606499547,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "$$CashPayment054005$$"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I click the button named \"FormPostAndClose\"",
+      "time" : {
+        "start" : 1633606499735,
+        "stop" : 1633606499748,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormPostAndClose"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And Delay 5",
+      "time" : {
+        "start" : 1633606499940,
+        "stop" : 1633606504004,
+        "duration" : 4064
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "5"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Create Cash receipt for the full amount",
+      "time" : {
+        "start" : 1633606504204,
+        "stop" : 1633606504622,
+        "duration" : 418
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.CashTransferOrder\"",
+        "time" : {
+          "start" : 1633606504204,
+          "stop" : 1633606504212,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.CashTransferOrder"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633606504407,
+          "stop" : 1633606504422,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "b2eb471d77cf68ae",
+          "name" : "table",
+          "source" : "b2eb471d77cf68ae.csv",
+          "type" : "text/csv",
+          "size" : 97
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I click the button named \"FormDocumentCashReceiptGenarateCashReceipt\"",
+        "time" : {
+          "start" : 1633606504608,
+          "stop" : 1633606504622,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormDocumentCashReceiptGenarateCashReceipt"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check that the correct receipt amount is indicated in the tabular part",
+      "time" : {
+        "start" : 1633606504818,
+        "stop" : 1633606511972,
+        "duration" : 7154
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I move to \"Payments\" tab",
+        "time" : {
+          "start" : 1633606504818,
+          "stop" : 1633606506024,
+          "duration" : 1206
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Payments"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And Delay 5",
+        "time" : {
+          "start" : 1633606506239,
+          "stop" : 1633606511318,
+          "duration" : 5079
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "5"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"PaymentList\" table contains lines",
+        "time" : {
+          "start" : 1633606511518,
+          "stop" : 1633606511972,
+          "duration" : 454
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "7dfc4dba66197e7a",
+          "name" : "table",
+          "source" : "7dfc4dba66197e7a.csv",
+          "type" : "text/csv",
+          "size" : 157
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "PaymentList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "And I click the button named \"FormPost\"",
+      "time" : {
+        "start" : 1633606512125,
+        "stop" : 1633606512139,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormPost"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I delete \"$$NumberCashReceipt054005$$\" variable",
+      "time" : {
+        "start" : 1633606512329,
+        "stop" : 1633606512335,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "$$NumberCashReceipt054005$$"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I delete \"$$CashReceipt054005$$\" variable",
+      "time" : {
+        "start" : 1633606512532,
+        "stop" : 1633606512537,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "$$CashReceipt054005$$"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I save the value of \"Number\" field as \"$$NumberCashReceipt054005$$\"",
+      "time" : {
+        "start" : 1633606512734,
+        "stop" : 1633606513089,
+        "duration" : 355
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Number"
+      }, {
+        "name" : "Парам2",
+        "value" : "$$NumberCashReceipt054005$$"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I save the window as \"$$CashReceipt054005$$\"",
+      "time" : {
+        "start" : 1633606513343,
+        "stop" : 1633606513351,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "$$CashReceipt054005$$"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I click the button named \"FormPostAndClose\"",
+      "time" : {
+        "start" : 1633606513546,
+        "stop" : 1633606513556,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormPostAndClose"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633606513749,
+        "stop" : 1633606514311,
+        "duration" : 562
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Check Cash payment and Cash receipt movements by register PlaningCashTransactions",
+      "time" : {
+        "start" : 1633606514566,
+        "stop" : 1633606516013,
+        "duration" : 1447
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/AccumulationRegister.R3035T_CashPlanning\"",
+        "time" : {
+          "start" : 1633606514566,
+          "stop" : 1633606514573,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/AccumulationRegister.R3035T_CashPlanning"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"List\" table contains lines",
+        "time" : {
+          "start" : 1633606514771,
+          "stop" : 1633606515729,
+          "duration" : 958
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "53500ea5077d7692",
+          "name" : "table",
+          "source" : "53500ea5077d7692.csv",
+          "type" : "text/csv",
+          "size" : 771
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1633606515985,
+          "stop" : 1633606516013,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 35,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 6
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_054005 create Cash receipt and Cash payment based on Cash transfer order in the different currency and check movements"
+  }, {
+    "name" : "feature",
+    "value" : "_0500 Cash management"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "cashmanagement"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "CashManagement"
+  }, {
+    "name" : "package",
+    "value" : "_0500 Cash management"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "cashmanagement", "tree", "positive" ]
+  },
+  "source" : "a6d0a3d0fb9195c6.json",
+  "parameterValues" : [ ]
+}

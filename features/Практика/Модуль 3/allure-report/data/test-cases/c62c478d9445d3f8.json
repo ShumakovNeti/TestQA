@@ -1,0 +1,221 @@
+{
+  "uid" : "c62c478d9445d3f8",
+  "name" : "_028534 check totals in the document Sales return",
+  "historyId" : "create document Sales return._028534 check totals in the document Sales return",
+  "time" : {
+    "start" : 1633608843072,
+    "stop" : 1633608845720,
+    "duration" : 2648
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I open hyperlink \"e1cib/list/Document.SalesReturn\"",
+      "time" : {
+        "start" : 1633608843869,
+        "stop" : 1633608843873,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Document.SalesReturn"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Select Sales Return",
+      "time" : {
+        "start" : 1633608843996,
+        "stop" : 1633608844553,
+        "duration" : 557
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633608843996,
+          "stop" : 1633608844447,
+          "duration" : 451
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "2c7086005a8ec0e1",
+          "name" : "table",
+          "source" : "2c7086005a8ec0e1.csv",
+          "type" : "text/csv",
+          "size" : 18
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633608844546,
+          "stop" : 1633608844553,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check totals in the document Sales return",
+      "time" : {
+        "start" : 1633608844674,
+        "stop" : 1633608845720,
+        "duration" : 1046
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Then the form attribute named \"ItemListTotalNetAmount\" became equal to \"116 101,69\"",
+        "time" : {
+          "start" : 1633608844674,
+          "stop" : 1633608845297,
+          "duration" : 623
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemListTotalNetAmount"
+        }, {
+          "name" : "Парам2",
+          "value" : "116 101,69"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then the form attribute named \"ItemListTotalTaxAmount\" became equal to \"20 898,31\"",
+        "time" : {
+          "start" : 1633608845485,
+          "stop" : 1633608845508,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemListTotalTaxAmount"
+        }, {
+          "name" : "Парам2",
+          "value" : "20 898,31"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And the editing text of form attribute named \"ItemListTotalTotalAmount\" became equal to \"137 000,00\"",
+        "time" : {
+          "start" : 1633608845691,
+          "stop" : 1633608845720,
+          "duration" : 29
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemListTotalTotalAmount"
+        }, {
+          "name" : "Парам2",
+          "value" : "137 000,00"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 8,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_028534 check totals in the document Sales return"
+  }, {
+    "name" : "feature",
+    "value" : "_0230 Sales"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "sales"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "Sales"
+  }, {
+    "name" : "package",
+    "value" : "_0230 Sales"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "positive", "sales" ]
+  },
+  "source" : "c62c478d9445d3f8.json",
+  "parameterValues" : [ ]
+}

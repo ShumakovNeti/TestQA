@@ -1,0 +1,5602 @@
+{
+  "uid" : "34458cf4c55253e8",
+  "name" : "_090500 preparation (create PI and SI based on Goods receipt and Shipment confirmation)",
+  "historyId" : "create Inventory transfer order based on several Internal supply request._090500 preparation (create PI and SI based on Goods receipt and Shipment confirmation)",
+  "time" : {
+    "start" : 1633606053184,
+    "stop" : 1633606154039,
+    "duration" : 100855
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "Given I launch TestClient opening script or connect the existing one",
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I open new TestClient session or connect the existing one",
+      "time" : {
+        "start" : 1633606053480,
+        "stop" : 1633606053618,
+        "duration" : 138
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633606053885,
+        "stop" : 1633606053892,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "When set True value to the constant",
+      "time" : {
+        "start" : 1633606054089,
+        "stop" : 1633606054308,
+        "duration" : 219
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I set \"True\" value to the constant \"UseItemKey\"",
+        "time" : {
+          "start" : 1633606054089,
+          "stop" : 1633606054107,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "UseItemKey"
+        }, {
+          "name" : "Парам2",
+          "value" : "True"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I set \"True\" value to the constant \"UseCompanies\"",
+        "time" : {
+          "start" : 1633606054289,
+          "stop" : 1633606054308,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "UseCompanies"
+        }, {
+          "name" : "Парам2",
+          "value" : "True"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And I close TestClient session",
+      "time" : {
+        "start" : 1633606054492,
+        "stop" : 1633606057674,
+        "duration" : 3182
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Given I open new TestClient session or connect the existing one",
+      "time" : {
+        "start" : 1633606057944,
+        "stop" : 1633606068276,
+        "duration" : 10332
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Load info",
+      "time" : {
+        "start" : 1633606068527,
+        "stop" : 1633606094972,
+        "duration" : 26445
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "When Create information register Barcodes records",
+        "time" : {
+          "start" : 1633606068527,
+          "stop" : 1633606068625,
+          "duration" : 98
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create information register \"Barcodes\" records:",
+          "time" : {
+            "start" : 1633606068527,
+            "stop" : 1633606068625,
+            "duration" : 98
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "a2a194162d532314",
+            "name" : "table",
+            "source" : "a2a194162d532314.csv",
+            "type" : "text/csv",
+            "size" : 879
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Barcodes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog Companies objects (own Second company)",
+        "time" : {
+          "start" : 1633606068952,
+          "stop" : 1633606068988,
+          "duration" : 36
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Companies\" objects:",
+          "time" : {
+            "start" : 1633606068952,
+            "stop" : 1633606068988,
+            "duration" : 36
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "a2f8a2bc241f8fe7",
+            "name" : "table",
+            "source" : "a2f8a2bc241f8fe7.csv",
+            "type" : "text/csv",
+            "size" : 382
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Companies"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog CashAccounts objects",
+        "time" : {
+          "start" : 1633606069120,
+          "stop" : 1633606069338,
+          "duration" : 218
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"CashAccounts\" objects:",
+          "time" : {
+            "start" : 1633606069120,
+            "stop" : 1633606069338,
+            "duration" : 218
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "927ffcd25f8e7c81",
+            "name" : "table",
+            "source" : "927ffcd25f8e7c81.csv",
+            "type" : "text/csv",
+            "size" : 3028
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CashAccounts"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog Agreements objects",
+        "time" : {
+          "start" : 1633606069533,
+          "stop" : 1633606070188,
+          "duration" : 655
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Agreements\" objects:",
+          "time" : {
+            "start" : 1633606069533,
+            "stop" : 1633606070188,
+            "duration" : 655
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "514522d94fdbf16e",
+            "name" : "table",
+            "source" : "514522d94fdbf16e.csv",
+            "type" : "text/csv",
+            "size" : 19695
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Agreements"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog ObjectStatuses objects",
+        "time" : {
+          "start" : 1633606070349,
+          "stop" : 1633606071015,
+          "duration" : 666
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"ObjectStatuses\" objects:",
+          "time" : {
+            "start" : 1633606070349,
+            "stop" : 1633606071015,
+            "duration" : 666
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "f2be7f95c4967c10",
+            "name" : "table",
+            "source" : "f2be7f95c4967c10.csv",
+            "type" : "text/csv",
+            "size" : 7709
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ObjectStatuses"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog ItemKeys objects",
+        "time" : {
+          "start" : 1633606071168,
+          "stop" : 1633606072914,
+          "duration" : 1746
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"ItemKeys\" objects:",
+          "time" : {
+            "start" : 1633606071168,
+            "stop" : 1633606071778,
+            "duration" : 610
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "4ffe17be5dbb0f0d",
+            "name" : "table",
+            "source" : "4ffe17be5dbb0f0d.csv",
+            "type" : "text/csv",
+            "size" : 8100
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemKeys"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section \"AddAttributes\":",
+          "time" : {
+            "start" : 1633606071984,
+            "stop" : 1633606072618,
+            "duration" : 634
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "a9f28c4511413c41",
+            "name" : "table",
+            "source" : "a9f28c4511413c41.csv",
+            "type" : "text/csv",
+            "size" : 11745
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "AddAttributes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section \"SpecificationAffectPricingMD5\":",
+          "time" : {
+            "start" : 1633606072781,
+            "stop" : 1633606072914,
+            "duration" : 133
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "5a81e06002ea6665",
+            "name" : "table",
+            "source" : "5a81e06002ea6665.csv",
+            "type" : "text/csv",
+            "size" : 3395
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "SpecificationAffectPricingMD5"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 3,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 3
+      }, {
+        "name" : "When Create catalog ItemTypes objects",
+        "time" : {
+          "start" : 1633606073182,
+          "stop" : 1633606073741,
+          "duration" : 559
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"ItemTypes\" objects:",
+          "time" : {
+            "start" : 1633606073182,
+            "stop" : 1633606073384,
+            "duration" : 202
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "5d63470ec9ac1ace",
+            "name" : "table",
+            "source" : "5d63470ec9ac1ace.csv",
+            "type" : "text/csv",
+            "size" : 2207
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemTypes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section \"AvailableAttributes\":",
+          "time" : {
+            "start" : 1633606073590,
+            "stop" : 1633606073741,
+            "duration" : 151
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "87dc38641c66beae",
+            "name" : "table",
+            "source" : "87dc38641c66beae.csv",
+            "type" : "text/csv",
+            "size" : 2196
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "AvailableAttributes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "When Create catalog Units objects",
+        "time" : {
+          "start" : 1633606073996,
+          "stop" : 1633606074146,
+          "duration" : 150
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Units\" objects:",
+          "time" : {
+            "start" : 1633606073996,
+            "stop" : 1633606074146,
+            "duration" : 150
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "48fa5f89926a3ce6",
+            "name" : "table",
+            "source" : "48fa5f89926a3ce6.csv",
+            "type" : "text/csv",
+            "size" : 1624
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Units"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog Items objects",
+        "time" : {
+          "start" : 1633606074410,
+          "stop" : 1633606075038,
+          "duration" : 628
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Items\" objects:",
+          "time" : {
+            "start" : 1633606074410,
+            "stop" : 1633606074748,
+            "duration" : 338
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "534a91473a612305",
+            "name" : "table",
+            "source" : "534a91473a612305.csv",
+            "type" : "text/csv",
+            "size" : 4910
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Items"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section \"AddAttributes\":",
+          "time" : {
+            "start" : 1633606075009,
+            "stop" : 1633606075038,
+            "duration" : 29
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "51f9e0d08bf53fee",
+            "name" : "table",
+            "source" : "51f9e0d08bf53fee.csv",
+            "type" : "text/csv",
+            "size" : 791
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "AddAttributes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "When Create catalog PriceTypes objects",
+        "time" : {
+          "start" : 1633606075214,
+          "stop" : 1633606075473,
+          "duration" : 259
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"PriceTypes\" objects:",
+          "time" : {
+            "start" : 1633606075214,
+            "stop" : 1633606075473,
+            "duration" : 259
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "4f6552480c5ca215",
+            "name" : "table",
+            "source" : "4f6552480c5ca215.csv",
+            "type" : "text/csv",
+            "size" : 2815
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "PriceTypes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog Specifications objects",
+        "time" : {
+          "start" : 1633606075619,
+          "stop" : 1633606076619,
+          "duration" : 1000
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Specifications\" objects:",
+          "time" : {
+            "start" : 1633606075619,
+            "stop" : 1633606075790,
+            "duration" : 171
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "25ce9421043b4c9b",
+            "name" : "table",
+            "source" : "25ce9421043b4c9b.csv",
+            "type" : "text/csv",
+            "size" : 2056
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Specifications"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section \"DataSet\":",
+          "time" : {
+            "start" : 1633606076130,
+            "stop" : 1633606076307,
+            "duration" : 177
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "4d70d8320cfd0491",
+            "name" : "table",
+            "source" : "4d70d8320cfd0491.csv",
+            "type" : "text/csv",
+            "size" : 14055
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "DataSet"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section \"DataQuantity\":",
+          "time" : {
+            "start" : 1633606076436,
+            "stop" : 1633606076619,
+            "duration" : 183
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "f13de6374df3b5f9",
+            "name" : "table",
+            "source" : "f13de6374df3b5f9.csv",
+            "type" : "text/csv",
+            "size" : 2252
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "DataQuantity"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 3,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 3
+      }, {
+        "name" : "When Create chart of characteristic types AddAttributeAndProperty objects",
+        "time" : {
+          "start" : 1633606076851,
+          "stop" : 1633606077101,
+          "duration" : 250
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create chart of characteristic types \"AddAttributeAndProperty\" objects:",
+          "time" : {
+            "start" : 1633606076851,
+            "stop" : 1633606077101,
+            "duration" : 250
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "84fac7a77e0fa79c",
+            "name" : "table",
+            "source" : "84fac7a77e0fa79c.csv",
+            "type" : "text/csv",
+            "size" : 3071
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "AddAttributeAndProperty"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog AddAttributeAndPropertySets objects",
+        "time" : {
+          "start" : 1633606077272,
+          "stop" : 1633606078524,
+          "duration" : 1252
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"AddAttributeAndPropertySets\" objects:",
+          "time" : {
+            "start" : 1633606077272,
+            "stop" : 1633606078267,
+            "duration" : 995
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "682cf8e2fb56d801",
+            "name" : "table",
+            "source" : "682cf8e2fb56d801.csv",
+            "type" : "text/csv",
+            "size" : 6775
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "AddAttributeAndPropertySets"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section \"Attributes\":",
+          "time" : {
+            "start" : 1633606078475,
+            "stop" : 1633606078524,
+            "duration" : 49
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "1931b2507a1e21ab",
+            "name" : "table",
+            "source" : "1931b2507a1e21ab.csv",
+            "type" : "text/csv",
+            "size" : 2877
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Attributes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "When Create catalog AddAttributeAndPropertyValues objects",
+        "time" : {
+          "start" : 1633606078679,
+          "stop" : 1633606079382,
+          "duration" : 703
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"AddAttributeAndPropertyValues\" objects:",
+          "time" : {
+            "start" : 1633606078679,
+            "stop" : 1633606079382,
+            "duration" : 703
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "4d1e34bc91a9723e",
+            "name" : "table",
+            "source" : "4d1e34bc91a9723e.csv",
+            "type" : "text/csv",
+            "size" : 10467
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "AddAttributeAndPropertyValues"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog Currencies objects",
+        "time" : {
+          "start" : 1633606079679,
+          "stop" : 1633606079767,
+          "duration" : 88
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Currencies\" objects:",
+          "time" : {
+            "start" : 1633606079679,
+            "stop" : 1633606079767,
+            "duration" : 88
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "b0e8284e01375c01",
+            "name" : "table",
+            "source" : "b0e8284e01375c01.csv",
+            "type" : "text/csv",
+            "size" : 634
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Currencies"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog Companies objects (Main company)",
+        "time" : {
+          "start" : 1633606079894,
+          "stop" : 1633606080134,
+          "duration" : 240
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Companies\" objects:",
+          "time" : {
+            "start" : 1633606079894,
+            "stop" : 1633606079923,
+            "duration" : 29
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "37b6625721dcadbb",
+            "name" : "table",
+            "source" : "37b6625721dcadbb.csv",
+            "type" : "text/csv",
+            "size" : 378
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Companies"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section  \"Currencies\":",
+          "time" : {
+            "start" : 1633606080087,
+            "stop" : 1633606080134,
+            "duration" : 47
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "78ef722600d5c53f",
+            "name" : "table",
+            "source" : "78ef722600d5c53f.csv",
+            "type" : "text/csv",
+            "size" : 860
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Currencies"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "When Create catalog Stores objects",
+        "time" : {
+          "start" : 1633606080292,
+          "stop" : 1633606080446,
+          "duration" : 154
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Stores\" objects:",
+          "time" : {
+            "start" : 1633606080292,
+            "stop" : 1633606080446,
+            "duration" : 154
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "a83e4d2931235b09",
+            "name" : "table",
+            "source" : "a83e4d2931235b09.csv",
+            "type" : "text/csv",
+            "size" : 1173
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Stores"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog Partners objects",
+        "time" : {
+          "start" : 1633606080862,
+          "stop" : 1633606081603,
+          "duration" : 741
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Partners\" objects:",
+          "time" : {
+            "start" : 1633606080862,
+            "stop" : 1633606081366,
+            "duration" : 504
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "6e249686e543b14",
+            "name" : "table",
+            "source" : "6e249686e543b14.csv",
+            "type" : "text/csv",
+            "size" : 5964
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Partners"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section \"AddAttributes\":",
+          "time" : {
+            "start" : 1633606081512,
+            "stop" : 1633606081603,
+            "duration" : 91
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "efe29ce01d334ae5",
+            "name" : "table",
+            "source" : "efe29ce01d334ae5.csv",
+            "type" : "text/csv",
+            "size" : 1314
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "AddAttributes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "When Create catalog Companies objects (partners company)",
+        "time" : {
+          "start" : 1633606081728,
+          "stop" : 1633606082022,
+          "duration" : 294
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Companies\" objects:",
+          "time" : {
+            "start" : 1633606081728,
+            "stop" : 1633606082022,
+            "duration" : 294
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "9222f448d8890118",
+            "name" : "table",
+            "source" : "9222f448d8890118.csv",
+            "type" : "text/csv",
+            "size" : 4695
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Companies"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog Partners objects (Ferron BP)",
+        "time" : {
+          "start" : 1633606082320,
+          "stop" : 1633606082351,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Partners\" objects:",
+          "time" : {
+            "start" : 1633606082320,
+            "stop" : 1633606082351,
+            "duration" : 31
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "be1702740a9cb1d5",
+            "name" : "table",
+            "source" : "be1702740a9cb1d5.csv",
+            "type" : "text/csv",
+            "size" : 473
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Partners"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog Partners objects (Kalipso)",
+        "time" : {
+          "start" : 1633606082523,
+          "stop" : 1633606082554,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Partners\" objects:",
+          "time" : {
+            "start" : 1633606082523,
+            "stop" : 1633606082554,
+            "duration" : 31
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "c86c0deacc9b265f",
+            "name" : "table",
+            "source" : "c86c0deacc9b265f.csv",
+            "type" : "text/csv",
+            "size" : 469
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Partners"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create information register PartnerSegments records",
+        "time" : {
+          "start" : 1633606082741,
+          "stop" : 1633606083027,
+          "duration" : 286
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create information register \"PartnerSegments\" records:",
+          "time" : {
+            "start" : 1633606082741,
+            "stop" : 1633606083027,
+            "duration" : 286
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "a1ce1eb8eb408881",
+            "name" : "table",
+            "source" : "a1ce1eb8eb408881.csv",
+            "type" : "text/csv",
+            "size" : 3006
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "PartnerSegments"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog PartnerSegments objects",
+        "time" : {
+          "start" : 1633606083196,
+          "stop" : 1633606083327,
+          "duration" : 131
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"PartnerSegments\" objects:",
+          "time" : {
+            "start" : 1633606083196,
+            "stop" : 1633606083327,
+            "duration" : 131
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "e014379c8472ea09",
+            "name" : "table",
+            "source" : "e014379c8472ea09.csv",
+            "type" : "text/csv",
+            "size" : 862
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "PartnerSegments"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create chart of characteristic types CurrencyMovementType objects",
+        "time" : {
+          "start" : 1633606083541,
+          "stop" : 1633606083658,
+          "duration" : 117
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create chart of characteristic types \"CurrencyMovementType\" objects:",
+          "time" : {
+            "start" : 1633606083541,
+            "stop" : 1633606083658,
+            "duration" : 117
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "67ba71e3ff71d4db",
+            "name" : "table",
+            "source" : "67ba71e3ff71d4db.csv",
+            "type" : "text/csv",
+            "size" : 2343
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CurrencyMovementType"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog TaxRates objects",
+        "time" : {
+          "start" : 1633606083948,
+          "stop" : 1633606084040,
+          "duration" : 92
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"TaxRates\" objects:",
+          "time" : {
+            "start" : 1633606083948,
+            "stop" : 1633606084040,
+            "duration" : 92
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "12494a92630c1a2a",
+            "name" : "table",
+            "source" : "12494a92630c1a2a.csv",
+            "type" : "text/csv",
+            "size" : 612
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "TaxRates"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog Taxes objects",
+        "time" : {
+          "start" : 1633606084157,
+          "stop" : 1633606084590,
+          "duration" : 433
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Taxes\" objects:",
+          "time" : {
+            "start" : 1633606084157,
+            "stop" : 1633606084186,
+            "duration" : 29
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "85ad3d084d07e0da",
+            "name" : "table",
+            "source" : "85ad3d084d07e0da.csv",
+            "type" : "text/csv",
+            "size" : 274
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Taxes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section \"TaxRates\":",
+          "time" : {
+            "start" : 1633606084359,
+            "stop" : 1633606084406,
+            "duration" : 47
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "b187343c90b80dd",
+            "name" : "table",
+            "source" : "b187343c90b80dd.csv",
+            "type" : "text/csv",
+            "size" : 680
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "TaxRates"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section \"UseDocuments\":",
+          "time" : {
+            "start" : 1633606084559,
+            "stop" : 1633606084590,
+            "duration" : 31
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "6127ca1c40f222c9",
+            "name" : "table",
+            "source" : "6127ca1c40f222c9.csv",
+            "type" : "text/csv",
+            "size" : 1262
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "UseDocuments"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 3,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 3
+      }, {
+        "name" : "When Create information register TaxSettings records",
+        "time" : {
+          "start" : 1633606084759,
+          "stop" : 1633606084840,
+          "duration" : 81
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create information register \"TaxSettings\" records:",
+          "time" : {
+            "start" : 1633606084759,
+            "stop" : 1633606084840,
+            "duration" : 81
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "f5e547aafd3c7248",
+            "name" : "table",
+            "source" : "f5e547aafd3c7248.csv",
+            "type" : "text/csv",
+            "size" : 847
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "TaxSettings"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create information register PricesByItemKeys records",
+        "time" : {
+          "start" : 1633606085003,
+          "stop" : 1633606085259,
+          "duration" : 256
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create information register \"PricesByItemKeys\" records:",
+          "time" : {
+            "start" : 1633606085003,
+            "stop" : 1633606085259,
+            "duration" : 256
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "af4afea9585f4f82",
+            "name" : "table",
+            "source" : "af4afea9585f4f82.csv",
+            "type" : "text/csv",
+            "size" : 20771
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "PricesByItemKeys"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create catalog IntegrationSettings objects",
+        "time" : {
+          "start" : 1633606085380,
+          "stop" : 1633606085886,
+          "duration" : 506
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"IntegrationSettings\" objects:",
+          "time" : {
+            "start" : 1633606085380,
+            "stop" : 1633606085494,
+            "duration" : 114
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "128db7b6349f7b9c",
+            "name" : "table",
+            "source" : "128db7b6349f7b9c.csv",
+            "type" : "text/csv",
+            "size" : 1231
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "IntegrationSettings"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section \"ConnectionSetting\":",
+          "time" : {
+            "start" : 1633606085780,
+            "stop" : 1633606085886,
+            "duration" : 106
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "101337f7bdcf6db4",
+            "name" : "table",
+            "source" : "101337f7bdcf6db4.csv",
+            "type" : "text/csv",
+            "size" : 2159
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ConnectionSetting"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "When Create information register CurrencyRates records",
+        "time" : {
+          "start" : 1633606086192,
+          "stop" : 1633606086587,
+          "duration" : 395
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create information register \"CurrencyRates\" records:",
+          "time" : {
+            "start" : 1633606086192,
+            "stop" : 1633606086587,
+            "duration" : 395
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "d0462caab85532f4",
+            "name" : "table",
+            "source" : "d0462caab85532f4.csv",
+            "type" : "text/csv",
+            "size" : 6878
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CurrencyRates"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When update ItemKeys",
+        "time" : {
+          "start" : 1633606086814,
+          "stop" : 1633606094972,
+          "duration" : 8158
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink \"e1cib/list/Catalog.ItemKeys\"",
+          "time" : {
+            "start" : 1633606086814,
+            "stop" : 1633606086821,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Catalog.ItemKeys"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Update item keys description\" button",
+          "time" : {
+            "start" : 1633606086994,
+            "stop" : 1633606089469,
+            "duration" : 2475
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Update item keys description"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And Delay 5",
+          "time" : {
+            "start" : 1633606089635,
+            "stop" : 1633606094716,
+            "duration" : 5081
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "5"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1633606094919,
+            "stop" : 1633606094972,
+            "duration" : 53
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 4,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 77,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 42
+    }, {
+      "name" : "* Add plugin for taxes calculation",
+      "time" : {
+        "start" : 1633606095117,
+        "stop" : 1633606095753,
+        "duration" : 636
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Catalog.ExternalDataProc\"",
+        "time" : {
+          "start" : 1633606095117,
+          "stop" : 1633606095125,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Catalog.ExternalDataProc"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "If \"List\" table does not contain lines Then",
+        "time" : {
+          "start" : 1633606095323,
+          "stop" : 1633606095514,
+          "duration" : 191
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "76d0a8d118badda6",
+          "name" : "table",
+          "source" : "76d0a8d118badda6.csv",
+          "type" : "text/csv",
+          "size" : 40
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create information register Taxes records (VAT)",
+        "time" : {
+          "start" : 1633606095727,
+          "stop" : 1633606095753,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create information register \"Taxes\" records:",
+          "time" : {
+            "start" : 1633606095727,
+            "stop" : 1633606095753,
+            "duration" : 26
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "af330e3cc54d0bb2",
+            "name" : "table",
+            "source" : "af330e3cc54d0bb2.csv",
+            "type" : "text/csv",
+            "size" : 212
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Taxes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "* Tax settings",
+      "time" : {
+        "start" : 1633606095929,
+        "stop" : 1633606100669,
+        "duration" : 4740
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "When filling in Tax settings for company",
+        "time" : {
+          "start" : 1633606095929,
+          "stop" : 1633606100669,
+          "duration" : 4740
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink \"e1cib/list/Catalog.Companies\"",
+          "time" : {
+            "start" : 1633606095929,
+            "stop" : 1633606095938,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Catalog.Companies"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606096174,
+            "stop" : 1633606096862,
+            "duration" : 688
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "9eb04d544c99ef7a",
+            "name" : "table",
+            "source" : "9eb04d544c99ef7a.csv",
+            "type" : "text/csv",
+            "size" : 34
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606097150,
+            "stop" : 1633606097158,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I move to \"Tax types\" tab",
+          "time" : {
+            "start" : 1633606097351,
+            "stop" : 1633606097730,
+            "duration" : 379
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Tax types"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"CompanyTaxes\" table",
+          "time" : {
+            "start" : 1633606097964,
+            "stop" : 1633606097981,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "72cf9de17e219db5",
+            "name" : "table",
+            "source" : "72cf9de17e219db5.csv",
+            "type" : "text/csv",
+            "size" : 66
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CompanyTaxes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"CompanyTaxes\" table",
+          "time" : {
+            "start" : 1633606098164,
+            "stop" : 1633606098177,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CompanyTaxes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click Open button of \"Tax\" field",
+          "time" : {
+            "start" : 1633606098367,
+            "stop" : 1633606098401,
+            "duration" : 34
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Tax"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then \"VAT (Tax type)\" window is opened",
+          "time" : {
+            "start" : 1633606098571,
+            "stop" : 1633606098896,
+            "duration" : 325
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "VAT (Tax type)"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Settings\" button",
+          "time" : {
+            "start" : 1633606099183,
+            "stop" : 1633606099213,
+            "duration" : 30
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Settings"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Ok\" button",
+          "time" : {
+            "start" : 1633606099382,
+            "stop" : 1633606099790,
+            "duration" : 408
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Ok"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Save and close\" button",
+          "time" : {
+            "start" : 1633606099991,
+            "stop" : 1633606100017,
+            "duration" : 26
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Save and close"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1633606100205,
+            "stop" : 1633606100669,
+            "duration" : 464
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 12,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 13,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "* Add sales tax",
+      "time" : {
+        "start" : 1633606100806,
+        "stop" : 1633606104180,
+        "duration" : 3374
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "When Create catalog Taxes objects (Sales tax)",
+        "time" : {
+          "start" : 1633606100806,
+          "stop" : 1633606101250,
+          "duration" : 444
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create catalog \"Taxes\" objects:",
+          "time" : {
+            "start" : 1633606100806,
+            "stop" : 1633606100837,
+            "duration" : 31
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "2b3c83cc83a25b18",
+            "name" : "table",
+            "source" : "2b3c83cc83a25b18.csv",
+            "type" : "text/csv",
+            "size" : 279
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Taxes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section \"TaxRates\":",
+          "time" : {
+            "start" : 1633606101040,
+            "stop" : 1633606101066,
+            "duration" : 26
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "7950dfbd1aea40a8",
+            "name" : "table",
+            "source" : "7950dfbd1aea40a8.csv",
+            "type" : "text/csv",
+            "size" : 152
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "TaxRates"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I refill object tabular section \"UseDocuments\":",
+          "time" : {
+            "start" : 1633606101223,
+            "stop" : 1633606101250,
+            "duration" : 27
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "c3e4243934b3c883",
+            "name" : "table",
+            "source" : "c3e4243934b3c883.csv",
+            "type" : "text/csv",
+            "size" : 268
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "UseDocuments"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 3,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 3
+      }, {
+        "name" : "When Create information register TaxSettings (Sales tax)",
+        "time" : {
+          "start" : 1633606101414,
+          "stop" : 1633606101444,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create information register \"TaxSettings\" records:",
+          "time" : {
+            "start" : 1633606101414,
+            "stop" : 1633606101444,
+            "duration" : 30
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "2d8a035d4e58d820",
+            "name" : "table",
+            "source" : "2d8a035d4e58d820.csv",
+            "type" : "text/csv",
+            "size" : 313
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "TaxSettings"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When Create information register Taxes records (Sales tax)",
+        "time" : {
+          "start" : 1633606101623,
+          "stop" : 1633606101643,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I check or create information register \"Taxes\" records:",
+          "time" : {
+            "start" : 1633606101623,
+            "stop" : 1633606101643,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "71e91ebc4374b620",
+            "name" : "table",
+            "source" : "71e91ebc4374b620.csv",
+            "type" : "text/csv",
+            "size" : 212
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Taxes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "When add sales tax settings",
+        "time" : {
+          "start" : 1633606101821,
+          "stop" : 1633606104180,
+          "duration" : 2359
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink \"e1cib/list/Catalog.Taxes\"",
+          "time" : {
+            "start" : 1633606101821,
+            "stop" : 1633606101827,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Catalog.Taxes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606102027,
+            "stop" : 1633606102066,
+            "duration" : 39
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "19a10dff854e9dff",
+            "name" : "table",
+            "source" : "19a10dff854e9dff.csv",
+            "type" : "text/csv",
+            "size" : 30
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606102239,
+            "stop" : 1633606102247,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click Select button of \"Plugins\" field",
+          "time" : {
+            "start" : 1633606102430,
+            "stop" : 1633606102496,
+            "duration" : 66
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Plugins"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606102633,
+            "stop" : 1633606102734,
+            "duration" : 101
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "bc0e073dd4c0e36e",
+            "name" : "table",
+            "source" : "bc0e073dd4c0e36e.csv",
+            "type" : "text/csv",
+            "size" : 40
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606102838,
+            "stop" : 1633606102846,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Settings\" button",
+          "time" : {
+            "start" : 1633606103039,
+            "stop" : 1633606103061,
+            "duration" : 22
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Settings"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Ok\" button",
+          "time" : {
+            "start" : 1633606103244,
+            "stop" : 1633606103501,
+            "duration" : 257
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Ok"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Save and close\" button",
+          "time" : {
+            "start" : 1633606103648,
+            "stop" : 1633606103669,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Save and close"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1633606103850,
+            "stop" : 1633606104180,
+            "duration" : 330
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 10,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 19,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 7
+    }, {
+      "name" : "* Create first Internal supply request from Store 02",
+      "time" : {
+        "start" : 1633606104470,
+        "stop" : 1633606119519,
+        "duration" : 15049
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "* Open a creation form Internal Supply Request",
+        "time" : {
+          "start" : 1633606104470,
+          "stop" : 1633606104744,
+          "duration" : 274
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink \"e1cib/list/Document.InternalSupplyRequest\"",
+          "time" : {
+            "start" : 1633606104470,
+            "stop" : 1633606104477,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Document.InternalSupplyRequest"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click the button named \"FormCreate\"",
+          "time" : {
+            "start" : 1633606104663,
+            "stop" : 1633606104744,
+            "duration" : 81
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "FormCreate"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "* Change the document number",
+        "time" : {
+          "start" : 1633606104869,
+          "stop" : 1633606105903,
+          "duration" : 1034
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I input \"0\" text in \"Number\" field",
+          "time" : {
+            "start" : 1633606104869,
+            "stop" : 1633606105302,
+            "duration" : 433
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Number"
+          }, {
+            "name" : "Парам2",
+            "value" : "0"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1633606105476,
+            "stop" : 1633606105483,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Yes\" button",
+          "time" : {
+            "start" : 1633606105697,
+            "stop" : 1633606105715,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Yes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"295\" text in \"Number\" field",
+          "time" : {
+            "start" : 1633606105886,
+            "stop" : 1633606105903,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Number"
+          }, {
+            "name" : "Парам2",
+            "value" : "295"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 4,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "* Filling in basic details",
+        "time" : {
+          "start" : 1633606106090,
+          "stop" : 1633606108538,
+          "duration" : 2448
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I click Select button of \"Company\" field",
+          "time" : {
+            "start" : 1633606106090,
+            "stop" : 1633606106115,
+            "duration" : 25
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Company"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Description\" field in \"List\" table",
+          "time" : {
+            "start" : 1633606106288,
+            "stop" : 1633606107164,
+            "duration" : 876
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "Description"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606107314,
+            "stop" : 1633606107330,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "b826a7534cd9c883",
+            "name" : "table",
+            "source" : "b826a7534cd9c883.csv",
+            "type" : "text/csv",
+            "size" : 34
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606107512,
+            "stop" : 1633606107520,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click Select button of \"Store\" field",
+          "time" : {
+            "start" : 1633606107714,
+            "stop" : 1633606107740,
+            "duration" : 26
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Store"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606107963,
+            "stop" : 1633606108259,
+            "duration" : 296
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "6492df8e10a9c624",
+            "name" : "table",
+            "source" : "6492df8e10a9c624.csv",
+            "type" : "text/csv",
+            "size" : 30
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606108528,
+            "stop" : 1633606108538,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 7,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "* Filling in the tabular part",
+        "time" : {
+          "start" : 1633606108727,
+          "stop" : 1633606119296,
+          "duration" : 10569
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I click \"Add\" button",
+          "time" : {
+            "start" : 1633606108727,
+            "stop" : 1633606108761,
+            "duration" : 34
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Add"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606108929,
+            "stop" : 1633606108944,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606109171,
+            "stop" : 1633606110424,
+            "duration" : 1253
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "a2a73fda5cc8dae5",
+            "name" : "table",
+            "source" : "a2a73fda5cc8dae5.csv",
+            "type" : "text/csv",
+            "size" : 30
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606110556,
+            "stop" : 1633606110567,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Item key\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606110758,
+            "stop" : 1633606110792,
+            "duration" : 34
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item key\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606110964,
+            "stop" : 1633606110985,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606111167,
+            "stop" : 1633606111455,
+            "duration" : 288
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "ab79392a1a695e9d",
+            "name" : "table",
+            "source" : "ab79392a1a695e9d.csv",
+            "type" : "text/csv",
+            "size" : 46
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606111570,
+            "stop" : 1633606111578,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Quantity\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606111774,
+            "stop" : 1633606111795,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"2,000\" text in \"Quantity\" field of \"ItemList\" table",
+          "time" : {
+            "start" : 1633606111980,
+            "stop" : 1633606112000,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          }, {
+            "name" : "Парам3",
+            "value" : "2,000"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I finish line editing in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606112179,
+            "stop" : 1633606112190,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And in the table \"ItemList\" I click the button named \"ItemListAdd\"",
+          "time" : {
+            "start" : 1633606112382,
+            "stop" : 1633606112401,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "ItemListAdd"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606112600,
+            "stop" : 1633606112616,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606112790,
+            "stop" : 1633606114046,
+            "duration" : 1256
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "b925ca0acad05fa4",
+            "name" : "table",
+            "source" : "b925ca0acad05fa4.csv",
+            "type" : "text/csv",
+            "size" : 27
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606114216,
+            "stop" : 1633606114225,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Item key\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606114424,
+            "stop" : 1633606114452,
+            "duration" : 28
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item key\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606114617,
+            "stop" : 1633606114639,
+            "duration" : 22
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606114826,
+            "stop" : 1633606115037,
+            "duration" : 211
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "9be4980c434c015",
+            "name" : "table",
+            "source" : "9be4980c434c015.csv",
+            "type" : "text/csv",
+            "size" : 41
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606115229,
+            "stop" : 1633606115241,
+            "duration" : 12
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Quantity\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606115430,
+            "stop" : 1633606115450,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"1,000\" text in \"Quantity\" field of \"ItemList\" table",
+          "time" : {
+            "start" : 1633606115632,
+            "stop" : 1633606115646,
+            "duration" : 14
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          }, {
+            "name" : "Парам3",
+            "value" : "1,000"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I finish line editing in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606115836,
+            "stop" : 1633606115844,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And in the table \"ItemList\" I click the button named \"ItemListAdd\"",
+          "time" : {
+            "start" : 1633606116048,
+            "stop" : 1633606116061,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "ItemListAdd"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606116243,
+            "stop" : 1633606116259,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606116447,
+            "stop" : 1633606117492,
+            "duration" : 1045
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "35950aabe0655c57",
+            "name" : "table",
+            "source" : "35950aabe0655c57.csv",
+            "type" : "text/csv",
+            "size" : 32
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606117671,
+            "stop" : 1633606117681,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Item key\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606117866,
+            "stop" : 1633606117895,
+            "duration" : 29
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item key\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606118070,
+            "stop" : 1633606118092,
+            "duration" : 22
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606118326,
+            "stop" : 1633606118385,
+            "duration" : 59
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "1bfb5f64ffa86b6d",
+            "name" : "table",
+            "source" : "1bfb5f64ffa86b6d.csv",
+            "type" : "text/csv",
+            "size" : 46
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606118689,
+            "stop" : 1633606118699,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Quantity\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606118883,
+            "stop" : 1633606118907,
+            "duration" : 24
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"2,000\" text in \"Quantity\" field of \"ItemList\" table",
+          "time" : {
+            "start" : 1633606119086,
+            "stop" : 1633606119102,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          }, {
+            "name" : "Парам3",
+            "value" : "2,000"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I finish line editing in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606119288,
+            "stop" : 1633606119296,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 33,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 6
+      }, {
+        "name" : "And I click the button named \"FormPostAndClose\"",
+        "time" : {
+          "start" : 1633606119504,
+          "stop" : 1633606119519,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormPostAndClose"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 51,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 8
+    }, {
+      "name" : "* Create second Internal supply request from Store 02",
+      "time" : {
+        "start" : 1633606119695,
+        "stop" : 1633606137793,
+        "duration" : 18098
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "* Open a creation form Internal Supply Request",
+        "time" : {
+          "start" : 1633606119695,
+          "stop" : 1633606120926,
+          "duration" : 1231
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink \"e1cib/list/Document.InternalSupplyRequest\"",
+          "time" : {
+            "start" : 1633606119695,
+            "stop" : 1633606120784,
+            "duration" : 1089
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Document.InternalSupplyRequest"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click the button named \"FormCreate\"",
+          "time" : {
+            "start" : 1633606120913,
+            "stop" : 1633606120926,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "FormCreate"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "* Change the document number",
+        "time" : {
+          "start" : 1633606121120,
+          "stop" : 1633606121962,
+          "duration" : 842
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I input \"0\" text in \"Number\" field",
+          "time" : {
+            "start" : 1633606121120,
+            "stop" : 1633606121278,
+            "duration" : 158
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Number"
+          }, {
+            "name" : "Парам2",
+            "value" : "0"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1633606121525,
+            "stop" : 1633606121534,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Yes\" button",
+          "time" : {
+            "start" : 1633606121727,
+            "stop" : 1633606121745,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Yes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"296\" text in \"Number\" field",
+          "time" : {
+            "start" : 1633606121943,
+            "stop" : 1633606121962,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Number"
+          }, {
+            "name" : "Парам2",
+            "value" : "296"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 4,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "* Filling in basic details",
+        "time" : {
+          "start" : 1633606122143,
+          "stop" : 1633606124989,
+          "duration" : 2846
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I click Select button of \"Company\" field",
+          "time" : {
+            "start" : 1633606122143,
+            "stop" : 1633606122181,
+            "duration" : 38
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Company"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Description\" field in \"List\" table",
+          "time" : {
+            "start" : 1633606122344,
+            "stop" : 1633606123683,
+            "duration" : 1339
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "Description"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606123963,
+            "stop" : 1633606123974,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "6294b0f417290fff",
+            "name" : "table",
+            "source" : "6294b0f417290fff.csv",
+            "type" : "text/csv",
+            "size" : 34
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606124164,
+            "stop" : 1633606124172,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click Select button of \"Store\" field",
+          "time" : {
+            "start" : 1633606124368,
+            "stop" : 1633606124390,
+            "duration" : 22
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Store"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606124596,
+            "stop" : 1633606124843,
+            "duration" : 247
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "6b3ebc7d7239a35d",
+            "name" : "table",
+            "source" : "6b3ebc7d7239a35d.csv",
+            "type" : "text/csv",
+            "size" : 30
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606124978,
+            "stop" : 1633606124989,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 7,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "* Filling in the tabular part",
+        "time" : {
+          "start" : 1633606125179,
+          "stop" : 1633606137585,
+          "duration" : 12406
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I click \"Add\" button",
+          "time" : {
+            "start" : 1633606125179,
+            "stop" : 1633606125211,
+            "duration" : 32
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Add"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606125382,
+            "stop" : 1633606125400,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606125587,
+            "stop" : 1633606126797,
+            "duration" : 1210
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "2681cfa7eae0a986",
+            "name" : "table",
+            "source" : "2681cfa7eae0a986.csv",
+            "type" : "text/csv",
+            "size" : 27
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606127011,
+            "stop" : 1633606127020,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Item key\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606127211,
+            "stop" : 1633606127237,
+            "duration" : 26
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item key\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606127415,
+            "stop" : 1633606127431,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606127619,
+            "stop" : 1633606127957,
+            "duration" : 338
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "83e1fedc62738b1b",
+            "name" : "table",
+            "source" : "83e1fedc62738b1b.csv",
+            "type" : "text/csv",
+            "size" : 42
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606128226,
+            "stop" : 1633606128235,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Quantity\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606128434,
+            "stop" : 1633606128477,
+            "duration" : 43
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"2,000\" text in \"Quantity\" field of \"ItemList\" table",
+          "time" : {
+            "start" : 1633606128645,
+            "stop" : 1633606128661,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          }, {
+            "name" : "Парам3",
+            "value" : "2,000"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I finish line editing in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606128836,
+            "stop" : 1633606128844,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And in the table \"ItemList\" I click the button named \"ItemListAdd\"",
+          "time" : {
+            "start" : 1633606129056,
+            "stop" : 1633606129075,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "ItemListAdd"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606129245,
+            "stop" : 1633606129270,
+            "duration" : 25
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606129446,
+            "stop" : 1633606131774,
+            "duration" : 2328
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "2ebad954dfa5716",
+            "name" : "table",
+            "source" : "2ebad954dfa5716.csv",
+            "type" : "text/csv",
+            "size" : 27
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606131885,
+            "stop" : 1633606131895,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Item key\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606132092,
+            "stop" : 1633606132125,
+            "duration" : 33
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item key\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606132295,
+            "stop" : 1633606132319,
+            "duration" : 24
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606132505,
+            "stop" : 1633606132916,
+            "duration" : 411
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "c195f178411a5210",
+            "name" : "table",
+            "source" : "c195f178411a5210.csv",
+            "type" : "text/csv",
+            "size" : 41
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606133102,
+            "stop" : 1633606133110,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Quantity\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606133306,
+            "stop" : 1633606133330,
+            "duration" : 24
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"2,000\" text in \"Quantity\" field of \"ItemList\" table",
+          "time" : {
+            "start" : 1633606133510,
+            "stop" : 1633606133529,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          }, {
+            "name" : "Парам3",
+            "value" : "2,000"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I finish line editing in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606133711,
+            "stop" : 1633606133720,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And in the table \"ItemList\" I click the button named \"ItemListAdd\"",
+          "time" : {
+            "start" : 1633606133926,
+            "stop" : 1633606133944,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "ItemListAdd"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606134122,
+            "stop" : 1633606134145,
+            "duration" : 23
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606134331,
+            "stop" : 1633606135716,
+            "duration" : 1385
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "93f01987f63cf015",
+            "name" : "table",
+            "source" : "93f01987f63cf015.csv",
+            "type" : "text/csv",
+            "size" : 32
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606135948,
+            "stop" : 1633606135959,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Item key\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606136154,
+            "stop" : 1633606136186,
+            "duration" : 32
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item key\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606136366,
+            "stop" : 1633606136383,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606136560,
+            "stop" : 1633606136686,
+            "duration" : 126
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "6cc5c8ace7f2371b",
+            "name" : "table",
+            "source" : "6cc5c8ace7f2371b.csv",
+            "type" : "text/csv",
+            "size" : 46
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606136961,
+            "stop" : 1633606136974,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Quantity\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606137164,
+            "stop" : 1633606137185,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"2,000\" text in \"Quantity\" field of \"ItemList\" table",
+          "time" : {
+            "start" : 1633606137367,
+            "stop" : 1633606137387,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          }, {
+            "name" : "Парам3",
+            "value" : "2,000"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I finish line editing in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606137579,
+            "stop" : 1633606137585,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 33,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 6
+      }, {
+        "name" : "And I click the button named \"FormPostAndClose\"",
+        "time" : {
+          "start" : 1633606137775,
+          "stop" : 1633606137793,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormPostAndClose"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 51,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 8
+    }, {
+      "name" : "* Create third Internal supply request from Store 03",
+      "time" : {
+        "start" : 1633606137984,
+        "stop" : 1633606154038,
+        "duration" : 16054
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "* Open a creation form Internal Supply Request",
+        "time" : {
+          "start" : 1633606137984,
+          "stop" : 1633606138807,
+          "duration" : 823
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink \"e1cib/list/Document.InternalSupplyRequest\"",
+          "time" : {
+            "start" : 1633606137984,
+            "stop" : 1633606138564,
+            "duration" : 580
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Document.InternalSupplyRequest"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click the button named \"FormCreate\"",
+          "time" : {
+            "start" : 1633606138797,
+            "stop" : 1633606138807,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "FormCreate"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "* Change the document number",
+        "time" : {
+          "start" : 1633606138993,
+          "stop" : 1633606139614,
+          "duration" : 621
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I input \"0\" text in \"Number\" field",
+          "time" : {
+            "start" : 1633606138993,
+            "stop" : 1633606139098,
+            "duration" : 105
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Number"
+          }, {
+            "name" : "Парам2",
+            "value" : "0"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1633606139198,
+            "stop" : 1633606139206,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Yes\" button",
+          "time" : {
+            "start" : 1633606139401,
+            "stop" : 1633606139418,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Yes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"297\" text in \"Number\" field",
+          "time" : {
+            "start" : 1633606139601,
+            "stop" : 1633606139614,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Number"
+          }, {
+            "name" : "Парам2",
+            "value" : "297"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 4,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "* Filling in basic details",
+        "time" : {
+          "start" : 1633606139816,
+          "stop" : 1633606142456,
+          "duration" : 2640
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I click Select button of \"Company\" field",
+          "time" : {
+            "start" : 1633606139816,
+            "stop" : 1633606139843,
+            "duration" : 27
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Company"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Description\" field in \"List\" table",
+          "time" : {
+            "start" : 1633606140018,
+            "stop" : 1633606141157,
+            "duration" : 1139
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "Description"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606141430,
+            "stop" : 1633606141446,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "7b1456df8c8b25bb",
+            "name" : "table",
+            "source" : "7b1456df8c8b25bb.csv",
+            "type" : "text/csv",
+            "size" : 34
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606141632,
+            "stop" : 1633606141640,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click Select button of \"Store\" field",
+          "time" : {
+            "start" : 1633606141837,
+            "stop" : 1633606141862,
+            "duration" : 25
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Store"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606142041,
+            "stop" : 1633606142239,
+            "duration" : 198
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "88b0991e74d41d39",
+            "name" : "table",
+            "source" : "88b0991e74d41d39.csv",
+            "type" : "text/csv",
+            "size" : 30
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606142447,
+            "stop" : 1633606142456,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 7,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "* Filling in the tabular part",
+        "time" : {
+          "start" : 1633606142652,
+          "stop" : 1633606153849,
+          "duration" : 11197
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I click \"Add\" button",
+          "time" : {
+            "start" : 1633606142652,
+            "stop" : 1633606142685,
+            "duration" : 33
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Add"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606142859,
+            "stop" : 1633606142874,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606143056,
+            "stop" : 1633606144365,
+            "duration" : 1309
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "aebaa65c1eb17e3d",
+            "name" : "table",
+            "source" : "aebaa65c1eb17e3d.csv",
+            "type" : "text/csv",
+            "size" : 27
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606144477,
+            "stop" : 1633606144488,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Item key\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606144683,
+            "stop" : 1633606144714,
+            "duration" : 31
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item key\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606144883,
+            "stop" : 1633606144913,
+            "duration" : 30
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606145096,
+            "stop" : 1633606145634,
+            "duration" : 538
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "89ebb03fb31d34bb",
+            "name" : "table",
+            "source" : "89ebb03fb31d34bb.csv",
+            "type" : "text/csv",
+            "size" : 41
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606145755,
+            "stop" : 1633606145764,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Quantity\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606145868,
+            "stop" : 1633606145895,
+            "duration" : 27
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"2,000\" text in \"Quantity\" field of \"ItemList\" table",
+          "time" : {
+            "start" : 1633606146103,
+            "stop" : 1633606146126,
+            "duration" : 23
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          }, {
+            "name" : "Парам3",
+            "value" : "2,000"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I finish line editing in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606146309,
+            "stop" : 1633606146317,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And in the table \"ItemList\" I click the button named \"ItemListAdd\"",
+          "time" : {
+            "start" : 1633606146508,
+            "stop" : 1633606146525,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "ItemListAdd"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606146714,
+            "stop" : 1633606146738,
+            "duration" : 24
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606146965,
+            "stop" : 1633606148284,
+            "duration" : 1319
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "c4c93678a11ccd5d",
+            "name" : "table",
+            "source" : "c4c93678a11ccd5d.csv",
+            "type" : "text/csv",
+            "size" : 27
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606148539,
+            "stop" : 1633606148555,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Item key\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606148745,
+            "stop" : 1633606148784,
+            "duration" : 39
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item key\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606148947,
+            "stop" : 1633606148968,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606149154,
+            "stop" : 1633606149336,
+            "duration" : 182
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "c100dc48fde40488",
+            "name" : "table",
+            "source" : "c100dc48fde40488.csv",
+            "type" : "text/csv",
+            "size" : 41
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606149556,
+            "stop" : 1633606149568,
+            "duration" : 12
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Quantity\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606149763,
+            "stop" : 1633606149784,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"2,000\" text in \"Quantity\" field of \"ItemList\" table",
+          "time" : {
+            "start" : 1633606149962,
+            "stop" : 1633606149989,
+            "duration" : 27
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          }, {
+            "name" : "Парам3",
+            "value" : "2,000"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I finish line editing in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606150167,
+            "stop" : 1633606150175,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And in the table \"ItemList\" I click the button named \"ItemListAdd\"",
+          "time" : {
+            "start" : 1633606150382,
+            "stop" : 1633606150402,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "ItemListAdd"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606150575,
+            "stop" : 1633606150593,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606150782,
+            "stop" : 1633606152209,
+            "duration" : 1427
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "9f1ce477a26a8086",
+            "name" : "table",
+            "source" : "9f1ce477a26a8086.csv",
+            "type" : "text/csv",
+            "size" : 32
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606152399,
+            "stop" : 1633606152409,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Item key\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606152602,
+            "stop" : 1633606152632,
+            "duration" : 30
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Item key\" attribute in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606152806,
+            "stop" : 1633606152822,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Item key"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633606153015,
+            "stop" : 1633606153090,
+            "duration" : 75
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "4f874a487fb9c6d9",
+            "name" : "table",
+            "source" : "4f874a487fb9c6d9.csv",
+            "type" : "text/csv",
+            "size" : 46
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633606153215,
+            "stop" : 1633606153222,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Quantity\" field in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606153416,
+            "stop" : 1633606153437,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"2,000\" text in \"Quantity\" field of \"ItemList\" table",
+          "time" : {
+            "start" : 1633606153617,
+            "stop" : 1633606153636,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          }, {
+            "name" : "Парам3",
+            "value" : "2,000"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I finish line editing in \"ItemList\" table",
+          "time" : {
+            "start" : 1633606153839,
+            "stop" : 1633606153849,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 33,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 6
+      }, {
+        "name" : "And I click the button named \"FormPostAndClose\"",
+        "time" : {
+          "start" : 1633606154024,
+          "stop" : 1633606154038,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormPostAndClose"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 51,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 8
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 278,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 77
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_090500 preparation (create PI and SI based on Goods receipt and Shipment confirmation)"
+  }, {
+    "name" : "feature",
+    "value" : "_2950Сreation based multi"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "creationbasedmulti"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "CreationBasedMulti"
+  }, {
+    "name" : "package",
+    "value" : "_2950Сreation based multi"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "positive", "creationbasedmulti" ]
+  },
+  "source" : "34458cf4c55253e8.json",
+  "parameterValues" : [ ]
+}

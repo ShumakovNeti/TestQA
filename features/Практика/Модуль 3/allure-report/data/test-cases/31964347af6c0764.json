@@ -1,0 +1,2364 @@
+{
+  "uid" : "31964347af6c0764",
+  "name" : "_092003 check serial lot number in the Retail return receipt",
+  "historyId" : "check that the item marked for deletion is not displayed._092003 check serial lot number in the Retail return receipt",
+  "time" : {
+    "start" : 1633610620255,
+    "stop" : 1633610640217,
+    "duration" : 19962
+  },
+  "status" : "failed",
+  "statusMessage" : "Line No.",
+  "statusTrace" : "{ExternalDataProcessor.РаботаСИнтерфейсом.Form.Форма.Form(7395)}: {ExternalDataProcessor.РаботаСИнтерфейсом.Form.Форма.Form(7262)}: Line No.6 is not found in Spreadsheet document on the form\n\nTechnical data:\n        ActiveWindowHeader: Document registrations report\n        ActiveFormName: Report.DocumentRegistrationsReport.Form.ReportForm\n        FeatureName: check that the item marked for deletion is not displayed\n        ScriptName: _092003 check serial lot number in the Retail return receipt\n        TreeRowNumber: 1 311\n        FeatureLineNumber: 392\n        ПолныйПутьКФиче: C:\\BuildAgentOne\\work\\161527a3295c878a\\features\\Internal\\_0920 SerialLotNumbers\\_0920SerialLotNumber.feature\n        FileName: C:\\OneScript\\lib\\vanessa-automation\\features\\Libraries\\UITestRunner\\step_definitions\\РаботаСИнтерфейсом.epf\n        ProcedureName: ТабличныйДокументСодержитСтроки\n        RunnerName: TeamAgent\n        ТипПлатформы: Windows x86-64\n        TestClientType: Thin\n        ConnectionString: /FC:/BuildAgentOne/work/161527a3295c878a/VAResult/AllSteps/SerialLotNumber\n        PIDTestClient: 8008\n        VBVersion: ver 1.2.037.9\n        PlatformVersion: 8.3.19.1351\n        TestManagerCompatibilityMode: Version8_3_18\n        ErrorDateTime: 07.10.2021 15:43:59",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Line No.",
+    "statusTrace" : "{ExternalDataProcessor.РаботаСИнтерфейсом.Form.Форма.Form(7395)}: {ExternalDataProcessor.РаботаСИнтерфейсом.Form.Форма.Form(7262)}: Line No.6 is not found in Spreadsheet document on the form\n\nTechnical data:\n        ActiveWindowHeader: Document registrations report\n        ActiveFormName: Report.DocumentRegistrationsReport.Form.ReportForm\n        FeatureName: check that the item marked for deletion is not displayed\n        ScriptName: _092003 check serial lot number in the Retail return receipt\n        TreeRowNumber: 1 311\n        FeatureLineNumber: 392\n        ПолныйПутьКФиче: C:\\BuildAgentOne\\work\\161527a3295c878a\\features\\Internal\\_0920 SerialLotNumbers\\_0920SerialLotNumber.feature\n        FileName: C:\\OneScript\\lib\\vanessa-automation\\features\\Libraries\\UITestRunner\\step_definitions\\РаботаСИнтерфейсом.epf\n        ProcedureName: ТабличныйДокументСодержитСтроки\n        RunnerName: TeamAgent\n        ТипПлатформы: Windows x86-64\n        TestClientType: Thin\n        ConnectionString: /FC:/BuildAgentOne/work/161527a3295c878a/VAResult/AllSteps/SerialLotNumber\n        PIDTestClient: 8008\n        VBVersion: ver 1.2.037.9\n        PlatformVersion: 8.3.19.1351\n        TestManagerCompatibilityMode: Version8_3_18\n        ErrorDateTime: 07.10.2021 15:43:59",
+    "steps" : [ {
+      "name" : "* Preparation",
+      "time" : {
+        "start" : 1633610621023,
+        "stop" : 1633610621234,
+        "duration" : 211
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I delete '$$RetailReturnReceipt092003$$' variable",
+        "time" : {
+          "start" : 1633610621023,
+          "stop" : 1633610621029,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "$$RetailReturnReceipt092003$$"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I delete '$$NumberRetailReturnReceipt092003$$' variable",
+        "time" : {
+          "start" : 1633610621227,
+          "stop" : 1633610621234,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "$$NumberRetailReturnReceipt092003$$"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Create Retail return receipt",
+      "time" : {
+        "start" : 1633610621429,
+        "stop" : 1633610622111,
+        "duration" : 682
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.RetailSalesReceipt\"",
+        "time" : {
+          "start" : 1633610621429,
+          "stop" : 1633610621436,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.RetailSalesReceipt"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633610621637,
+          "stop" : 1633610621722,
+          "duration" : 85
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "965dd49227301e8d",
+          "name" : "table",
+          "source" : "965dd49227301e8d.csv",
+          "type" : "text/csv",
+          "size" : 18
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I click the button named \"FormDocumentRetailReturnReceiptGenarate\"",
+        "time" : {
+          "start" : 1633610621837,
+          "stop" : 1633610621850,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormDocumentRetailReturnReceiptGenarate"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Ok\" button",
+        "time" : {
+          "start" : 1633610622041,
+          "stop" : 1633610622111,
+          "duration" : 70
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Ok"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check filling in serial lot number",
+      "time" : {
+        "start" : 1633610622240,
+        "stop" : 1633610623578,
+        "duration" : 1338
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And \"ItemList\" table contains lines",
+        "time" : {
+          "start" : 1633610622240,
+          "stop" : 1633610623336,
+          "duration" : 1096
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "58c9bb739f6f5457",
+          "name" : "table",
+          "source" : "58c9bb739f6f5457.csv",
+          "type" : "text/csv",
+          "size" : 408
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And \"SerialLotNumbersTree\" table contains lines",
+        "time" : {
+          "start" : 1633610623462,
+          "stop" : 1633610623578,
+          "duration" : 116
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "c8303d9a561289d5",
+          "name" : "table",
+          "source" : "c8303d9a561289d5.csv",
+          "type" : "text/csv",
+          "size" : 186
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "SerialLotNumbersTree"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "* Check that the field Serial lot number is inactive in the second string",
+      "time" : {
+        "start" : 1633610623868,
+        "stop" : 1633610626784,
+        "duration" : 2916
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I go to line in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610623868,
+          "stop" : 1633610623905,
+          "duration" : 37
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "ce0abddad5a90038",
+          "name" : "table",
+          "source" : "ce0abddad5a90038.csv",
+          "type" : "text/csv",
+          "size" : 53
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610624070,
+          "stop" : 1633610624079,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "When I Check the steps for Exception",
+        "time" : {
+          "start" : 1633610624273,
+          "stop" : 1633610626784,
+          "duration" : 2511
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "1b0937e13afb7ff6",
+          "name" : "table",
+          "source" : "1b0937e13afb7ff6.csv",
+          "type" : "text/csv",
+          "size" : 118
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "* Post Retail return receipt and check movements in the register Retail sales",
+      "time" : {
+        "start" : 1633610626914,
+        "stop" : 1633610640215,
+        "duration" : 13301
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I click the button named \"FormPost\"",
+        "time" : {
+          "start" : 1633610626914,
+          "stop" : 1633610626929,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormPost"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I delete \"$$RetailReturnReceipt092003$$\" variable",
+        "time" : {
+          "start" : 1633610627116,
+          "stop" : 1633610627121,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "$$RetailReturnReceipt092003$$"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I save the window as \"$$RetailReturnReceipt092003$$\"",
+        "time" : {
+          "start" : 1633610627318,
+          "stop" : 1633610628033,
+          "duration" : 715
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "$$RetailReturnReceipt092003$$"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Registrations report\" button",
+        "time" : {
+          "start" : 1633610628133,
+          "stop" : 1633610628165,
+          "duration" : 32
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Registrations report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select \"R2050 Retail sales\" exact value from \"Register\" drop-down list",
+        "time" : {
+          "start" : 1633610628337,
+          "stop" : 1633610628743,
+          "duration" : 406
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Register"
+        }, {
+          "name" : "Парам2",
+          "value" : "R2050 Retail sales"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633610628942,
+          "stop" : 1633610628964,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"ResultTable\" spreadsheet document contains lines:",
+        "time" : {
+          "start" : 1633610629152,
+          "stop" : 1633610640215,
+          "duration" : 11063
+        },
+        "status" : "failed",
+        "statusMessage" : "Line No.",
+        "statusTrace" : "{ExternalDataProcessor.РаботаСИнтерфейсом.Form.Форма.Form(7395)}: {ExternalDataProcessor.РаботаСИнтерфейсом.Form.Форма.Form(7262)}: Line No.6 is not found in Spreadsheet document on the form\n\nTechnical data:\n        ActiveWindowHeader: Document registrations report\n        ActiveFormName: Report.DocumentRegistrationsReport.Form.ReportForm\n        FeatureName: check that the item marked for deletion is not displayed\n        ScriptName: _092003 check serial lot number in the Retail return receipt\n        TreeRowNumber: 1 311\n        FeatureLineNumber: 392\n        ПолныйПутьКФиче: C:\\BuildAgentOne\\work\\161527a3295c878a\\features\\Internal\\_0920 SerialLotNumbers\\_0920SerialLotNumber.feature\n        FileName: C:\\OneScript\\lib\\vanessa-automation\\features\\Libraries\\UITestRunner\\step_definitions\\РаботаСИнтерфейсом.epf\n        ProcedureName: ТабличныйДокументСодержитСтроки\n        RunnerName: TeamAgent\n        ТипПлатформы: Windows x86-64\n        TestClientType: Thin\n        ConnectionString: /FC:/BuildAgentOne/work/161527a3295c878a/VAResult/AllSteps/SerialLotNumber\n        PIDTestClient: 8008\n        VBVersion: ver 1.2.037.9\n        PlatformVersion: 8.3.19.1351\n        TestManagerCompatibilityMode: Version8_3_18\n        ErrorDateTime: 07.10.2021 15:43:59",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "41b1f2dcf63ceb13",
+          "name" : "table",
+          "source" : "41b1f2dcf63ceb13.csv",
+          "type" : "text/csv",
+          "size" : 1022
+        }, {
+          "uid" : "69f9be7289e67ffe",
+          "name" : "Differences.mxl",
+          "source" : "69f9be7289e67ffe.mxl",
+          "type" : "mxl",
+          "size" : 4705
+        }, {
+          "uid" : "1ec9fa4c389fc1b2",
+          "name" : "Differences.html",
+          "source" : "1ec9fa4c389fc1b2.html",
+          "type" : "html",
+          "size" : 9224
+        }, {
+          "uid" : "8aea706b4700a309",
+          "name" : "ReferenceValueTable.mxl",
+          "source" : "8aea706b4700a309.mxl",
+          "type" : "mxl",
+          "size" : 4545
+        }, {
+          "uid" : "d340fdc2ef282d4",
+          "name" : "ReferenceValueTable.html",
+          "source" : "d340fdc2ef282d4.html",
+          "type" : "html",
+          "size" : 9145
+        }, {
+          "uid" : "5e7dc776016e35fc",
+          "name" : "CurrentValueLayout.mxl",
+          "source" : "5e7dc776016e35fc.mxl",
+          "type" : "mxl",
+          "size" : 4677
+        }, {
+          "uid" : "6fd2a91d8c1e014",
+          "name" : "CurrentValueLayout.html",
+          "source" : "6fd2a91d8c1e014.html",
+          "type" : "html",
+          "size" : 9161
+        }, {
+          "uid" : "b224e630335a846a",
+          "name" : "EventLog.mxl",
+          "source" : "b224e630335a846a.mxl",
+          "type" : "mxl",
+          "size" : 92227
+        }, {
+          "uid" : "7bf79fd2aa3e6888",
+          "name" : "EventLog.html",
+          "source" : "7bf79fd2aa3e6888.html",
+          "type" : "html",
+          "size" : 91128
+        }, {
+          "uid" : "c5652ecdadb2ec45",
+          "name" : "EventLog.xlsx",
+          "source" : "c5652ecdadb2ec45.xlsx",
+          "type" : "xlsx",
+          "size" : 18110
+        }, {
+          "uid" : "a7f64e5b8974ecfc",
+          "name" : "ActiveFormState.mxl",
+          "source" : "a7f64e5b8974ecfc.mxl",
+          "type" : "mxl",
+          "size" : 3353
+        }, {
+          "uid" : "ee18d234d2d04286",
+          "name" : "ActiveFormState.html",
+          "source" : "ee18d234d2d04286.html",
+          "type" : "html",
+          "size" : 6816
+        }, {
+          "uid" : "64b0ed755f77380f",
+          "name" : "ActiveFormState.xlsx",
+          "source" : "64b0ed755f77380f.xlsx",
+          "type" : "xlsx",
+          "size" : 7031
+        }, {
+          "uid" : "b62374ae3ed9ee36",
+          "name" : "AllFormsState.mxl",
+          "source" : "b62374ae3ed9ee36.mxl",
+          "type" : "mxl",
+          "size" : 86442
+        }, {
+          "uid" : "6d6f403461065fd2",
+          "name" : "AllFormsState.html",
+          "source" : "6d6f403461065fd2.html",
+          "type" : "html",
+          "size" : 191271
+        }, {
+          "uid" : "a3ce8bd9a32d2f0b",
+          "name" : "AllFormsState.xlsx",
+          "source" : "a3ce8bd9a32d2f0b.xlsx",
+          "type" : "xlsx",
+          "size" : 18338
+        }, {
+          "uid" : "ffa4eaf50b851045",
+          "name" : "NetworkConnectionsData.txt",
+          "source" : "ffa4eaf50b851045.txt",
+          "type" : "txt",
+          "size" : 10839
+        }, {
+          "uid" : "7d3a41deee6d910e",
+          "name" : "OSProcessesData.txt",
+          "source" : "7d3a41deee6d910e.txt",
+          "type" : "txt",
+          "size" : 14914
+        }, {
+          "uid" : "43c5f17569208bd2",
+          "name" : "VariablesData.mxl",
+          "source" : "43c5f17569208bd2.mxl",
+          "type" : "mxl",
+          "size" : 3329
+        }, {
+          "uid" : "e7e1d63f96515290",
+          "name" : "VariablesData.html",
+          "source" : "e7e1d63f96515290.html",
+          "type" : "html",
+          "size" : 6637
+        }, {
+          "uid" : "2926729626a8139d",
+          "name" : "expected",
+          "source" : "2926729626a8139d.png",
+          "type" : "image/png",
+          "size" : 314606
+        }, {
+          "uid" : "d6894a839a3be471",
+          "name" : "actual",
+          "source" : "d6894a839a3be471.png",
+          "type" : "image/png",
+          "size" : 415241
+        }, {
+          "uid" : "f1e7d0cfd5a0f4bc",
+          "name" : "diff",
+          "source" : "f1e7d0cfd5a0f4bc.png",
+          "type" : "image/png",
+          "size" : 292294
+        }, {
+          "uid" : "179ea2105d607e23",
+          "name" : "diff-animation",
+          "source" : "179ea2105d607e23.gif",
+          "type" : "image/png",
+          "size" : 246513
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "attachmentsCount" : 24
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 7,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 24
+    }, {
+      "name" : "* Сhange the quantity and check that the quantity of the serial lot numbers matches the quantity in the document",
+      "time" : {
+        "start" : 1633610640215,
+        "stop" : 1633610640216,
+        "duration" : 1
+      },
+      "status" : "skipped",
+      "steps" : [ {
+        "name" : "And I activate \"$$RetailReturnReceipt092003$$\" window",
+        "time" : {
+          "start" : 1633610640215,
+          "stop" : 1633610640215,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "$$RetailReturnReceipt092003$$"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640215,
+          "stop" : 1633610640215,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "980e1ad7d103894c",
+          "name" : "table",
+          "source" : "980e1ad7d103894c.csv",
+          "type" : "text/csv",
+          "size" : 58
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I input \"1,000\" text in \"Q\" field of \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640215,
+          "stop" : 1633610640215,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        }, {
+          "name" : "Парам2",
+          "value" : "Q"
+        }, {
+          "name" : "Парам3",
+          "value" : "1,000"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click the button named \"FormPost\"",
+        "time" : {
+          "start" : 1633610640215,
+          "stop" : 1633610640215,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormPost"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then I wait that in user messages the \"Quantity [1] does not match the quantity [3] by serial/lot numbers\" substring will appear in \"30\" seconds",
+        "time" : {
+          "start" : 1633610640215,
+          "stop" : 1633610640215,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Quantity [1] does not match the quantity [3] by serial/lot numbers"
+        }, {
+          "name" : "Парам2",
+          "value" : "30"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "* Delete 1 serial lot number",
+        "time" : {
+          "start" : 1633610640215,
+          "stop" : 1633610640216,
+          "duration" : 1
+        },
+        "status" : "skipped",
+        "steps" : [ {
+          "name" : "And I go to line in \"ItemList\" table",
+          "time" : {
+            "start" : 1633610640215,
+            "stop" : 1633610640215,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "b5fbd354b7083773",
+            "name" : "table",
+            "source" : "b5fbd354b7083773.csv",
+            "type" : "text/csv",
+            "size" : 46
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"ItemList\" table",
+          "time" : {
+            "start" : 1633610640215,
+            "stop" : 1633610640215,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of the attribute named \"ItemListSerialLotNumbersPresentation\" in \"ItemList\" table",
+          "time" : {
+            "start" : 1633610640215,
+            "stop" : 1633610640215,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "ItemListSerialLotNumbersPresentation"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"SerialLotNumbers\" table",
+          "time" : {
+            "start" : 1633610640215,
+            "stop" : 1633610640216,
+            "duration" : 1
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "1d95529c864844e6",
+            "name" : "table",
+            "source" : "1d95529c864844e6.csv",
+            "type" : "text/csv",
+            "size" : 61
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "SerialLotNumbers"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And in the table \"SerialLotNumbers\" I click the button named \"SerialLotNumbersContextMenuDelete\"",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "SerialLotNumbers"
+          }, {
+            "name" : "Парам2",
+            "value" : "SerialLotNumbersContextMenuDelete"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Ok\" button",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Ok"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 6,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "And I click the button named \"FormPost\"",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormPost"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then I wait that in user messages the \"Quantity [1] does not match the quantity [2] by serial/lot numbers\" substring will appear in \"30\" seconds",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Quantity [1] does not match the quantity [2] by serial/lot numbers"
+        }, {
+          "name" : "Парам2",
+          "value" : "30"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "* Change serial/lot numbers quantity to 3",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ {
+          "name" : "And I go to line in \"ItemList\" table",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "a0daa679f2c17c61",
+            "name" : "table",
+            "source" : "a0daa679f2c17c61.csv",
+            "type" : "text/csv",
+            "size" : 46
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"ItemList\" table",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of the attribute named \"ItemListSerialLotNumbersPresentation\" in \"ItemList\" table",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          }, {
+            "name" : "Парам2",
+            "value" : "ItemListSerialLotNumbersPresentation"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"SerialLotNumbers\" table",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "15581835ed9b67d9",
+            "name" : "table",
+            "source" : "15581835ed9b67d9.csv",
+            "type" : "text/csv",
+            "size" : 61
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "SerialLotNumbers"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I activate \"Quantity\" field in \"SerialLotNumbers\" table",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "SerialLotNumbers"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I select current line in \"SerialLotNumbers\" table",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "SerialLotNumbers"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"1,000\" text in \"Quantity\" field of \"SerialLotNumbers\" table",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "SerialLotNumbers"
+          }, {
+            "name" : "Парам2",
+            "value" : "Quantity"
+          }, {
+            "name" : "Парам3",
+            "value" : "1,000"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I finish line editing in \"SerialLotNumbers\" table",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "SerialLotNumbers"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Ok\" button",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Ok"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I move to \"Payments\" tab",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Payments"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Amount\" field in \"Payments\" table",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Payments"
+          }, {
+            "name" : "Парам2",
+            "value" : "Amount"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I select current line in \"Payments\" table",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Payments"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"1 750,00\" text in \"Amount\" field of \"Payments\" table",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Payments"
+          }, {
+            "name" : "Парам2",
+            "value" : "Amount"
+          }, {
+            "name" : "Парам3",
+            "value" : "1 750,00"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I finish line editing in \"Payments\" table",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Payments"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I move to \"Item list\" tab",
+          "time" : {
+            "start" : 1633610640216,
+            "stop" : 1633610640216,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Item list"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 15,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 30,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 5
+    }, {
+      "name" : "* Post Retail return receipt and check movements in the register Retail sales",
+      "time" : {
+        "start" : 1633610640216,
+        "stop" : 1633610640216,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ {
+        "name" : "And I click the button named \"FormPost\"",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormPost"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Registrations report\" button",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Registrations report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select \"R2050 Retail sales\" exact value from \"Register\" drop-down list",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Register"
+        }, {
+          "name" : "Парам2",
+          "value" : "R2050 Retail sales"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click \"Generate report\" button",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Generate report"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"ResultTable\" spreadsheet document contains lines:",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "407f0a74957af5a3",
+          "name" : "table",
+          "source" : "407f0a74957af5a3.csv",
+          "type" : "text/csv",
+          "size" : 789
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ResultTable"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check the message to the user when the serial number was not filled in",
+      "time" : {
+        "start" : 1633610640216,
+        "stop" : 1633610640216,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ {
+        "name" : "And I activate \"$$RetailReturnReceipt092003$$\" window",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "$$RetailReturnReceipt092003$$"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click the button named \"Add\"",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Add"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click choice button of the attribute named \"ItemListItem\" in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        }, {
+          "name" : "Парам2",
+          "value" : "ItemListItem"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "b37313aa72de911a",
+          "name" : "table",
+          "source" : "b37313aa72de911a.csv",
+          "type" : "text/csv",
+          "size" : 27
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click choice button of the attribute named \"ItemListItemKey\" in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        }, {
+          "name" : "Парам2",
+          "value" : "ItemListItemKey"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "289ceedc9fb1fef6",
+          "name" : "table",
+          "source" : "289ceedc9fb1fef6.csv",
+          "type" : "text/csv",
+          "size" : 41
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click the button named \"FormPost\"",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormPost"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then I wait that in user messages the \"Field [Item serial/lot numbers] is empty.\" substring will appear in \"30\" seconds",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Field [Item serial/lot numbers] is empty."
+        }, {
+          "name" : "Парам2",
+          "value" : "30"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 10,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "* Change item that uses serial lot number to item that does not use serial lot number and check user message",
+      "time" : {
+        "start" : 1633610640216,
+        "stop" : 1633610640216,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ {
+        "name" : "And I go to line in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "6a512fdf7a8cfc57",
+          "name" : "table",
+          "source" : "6a512fdf7a8cfc57.csv",
+          "type" : "text/csv",
+          "size" : 41
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I activate \"Item\" field in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        }, {
+          "name" : "Парам2",
+          "value" : "Item"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click choice button of \"Item\" attribute in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        }, {
+          "name" : "Парам2",
+          "value" : "Item"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "13da65f9a9cff018",
+          "name" : "table",
+          "source" : "13da65f9a9cff018.csv",
+          "type" : "text/csv",
+          "size" : 27
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click choice button of \"Item key\" attribute in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        }, {
+          "name" : "Парам2",
+          "value" : "Item key"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "50a1b20797236ce",
+          "name" : "table",
+          "source" : "50a1b20797236ce.csv",
+          "type" : "text/csv",
+          "size" : 41
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I finish line editing in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I move to \"Payments\" tab",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Payments"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I activate \"Amount\" field in \"Payments\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Payments"
+        }, {
+          "name" : "Парам2",
+          "value" : "Amount"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I select current line in \"Payments\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Payments"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I input \"2 450,00\" text in \"Amount\" field of \"Payments\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Payments"
+        }, {
+          "name" : "Парам2",
+          "value" : "Amount"
+        }, {
+          "name" : "Парам3",
+          "value" : "2 450,00"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I finish line editing in \"Payments\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Payments"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I move to \"Item list\" tab",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Item list"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click the button named \"FormPost\"",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormPost"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then user message window does not contain messages",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 17,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    }, {
+      "name" : "* Change item that does not use serial lot number to item that uses serial lot number and check user message",
+      "time" : {
+        "start" : 1633610640216,
+        "stop" : 1633610640217,
+        "duration" : 1
+      },
+      "status" : "skipped",
+      "steps" : [ {
+        "name" : "And I go to line in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "3fe4bb918307288a",
+          "name" : "table",
+          "source" : "3fe4bb918307288a.csv",
+          "type" : "text/csv",
+          "size" : 41
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I activate \"Item\" field in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        }, {
+          "name" : "Парам2",
+          "value" : "Item"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click choice button of \"Item\" attribute in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        }, {
+          "name" : "Парам2",
+          "value" : "Item"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633610640216,
+          "stop" : 1633610640216,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "b4b4780b6c2271f4",
+          "name" : "table",
+          "source" : "b4b4780b6c2271f4.csv",
+          "type" : "text/csv",
+          "size" : 27
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633610640217,
+          "stop" : 1633610640217,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click choice button of \"Item key\" attribute in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640217,
+          "stop" : 1633610640217,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        }, {
+          "name" : "Парам2",
+          "value" : "Item key"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633610640217,
+          "stop" : 1633610640217,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "1c1823cd6b64ae7a",
+          "name" : "table",
+          "source" : "1c1823cd6b64ae7a.csv",
+          "type" : "text/csv",
+          "size" : 41
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633610640217,
+          "stop" : 1633610640217,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I finish line editing in \"ItemList\" table",
+        "time" : {
+          "start" : 1633610640217,
+          "stop" : 1633610640217,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ItemList"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click the button named \"FormPost\"",
+        "time" : {
+          "start" : 1633610640217,
+          "stop" : 1633610640217,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormPost"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then I wait that in user messages the \"Field [Item serial/lot numbers] is empty.\" substring will appear in \"30\" seconds",
+        "time" : {
+          "start" : 1633610640217,
+          "stop" : 1633610640217,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Field [Item serial/lot numbers] is empty."
+        }, {
+          "name" : "Парам2",
+          "value" : "30"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 11,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633610640217,
+        "stop" : 1633610640217,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5f2c357fbb1d2b7d",
+        "name" : "Этот клиент.File_\"C__BuildAgentOne_work_161527a3295c878a_VAResult_AllSteps_SerialLotNumber\"_",
+        "source" : "5f2c357fbb1d2b7d.png",
+        "type" : "image/png",
+        "size" : 56146
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ {
+      "uid" : "79f51b331678397d",
+      "name" : "expected",
+      "source" : "79f51b331678397d.png",
+      "type" : "image/png",
+      "size" : 314606
+    }, {
+      "uid" : "6f9fbd5e5dc840e9",
+      "name" : "actual",
+      "source" : "6f9fbd5e5dc840e9.png",
+      "type" : "image/png",
+      "size" : 415241
+    }, {
+      "uid" : "5bcddc622910d391",
+      "name" : "diff",
+      "source" : "5bcddc622910d391.png",
+      "type" : "image/png",
+      "size" : 292294
+    }, {
+      "uid" : "108b07a224959dee",
+      "name" : "diff-animation",
+      "source" : "108b07a224959dee.gif",
+      "type" : "image/png",
+      "size" : 246513
+    }, {
+      "uid" : "764f616d894af34",
+      "name" : "Этот клиент.File_\"C__BuildAgentOne_work_161527a3295c878a_VAResult_AllSteps_SerialLotNumber\"_",
+      "source" : "764f616d894af34.png",
+      "type" : "image/png",
+      "size" : 56146
+    }, {
+      "uid" : "c6f6ee3a94e4e890",
+      "name" : "Differences.mxl",
+      "source" : "c6f6ee3a94e4e890.mxl",
+      "type" : "mxl",
+      "size" : 4705
+    }, {
+      "uid" : "624dd3e6e29030c",
+      "name" : "Differences.html",
+      "source" : "624dd3e6e29030c.html",
+      "type" : "html",
+      "size" : 9224
+    }, {
+      "uid" : "feadd7eeaa5c4262",
+      "name" : "ReferenceValueTable.mxl",
+      "source" : "feadd7eeaa5c4262.mxl",
+      "type" : "mxl",
+      "size" : 4545
+    }, {
+      "uid" : "66885f4d258fa658",
+      "name" : "ReferenceValueTable.html",
+      "source" : "66885f4d258fa658.html",
+      "type" : "html",
+      "size" : 9145
+    }, {
+      "uid" : "5f91f5df54277ad9",
+      "name" : "CurrentValueLayout.mxl",
+      "source" : "5f91f5df54277ad9.mxl",
+      "type" : "mxl",
+      "size" : 4677
+    }, {
+      "uid" : "e0813c32eda5264a",
+      "name" : "CurrentValueLayout.html",
+      "source" : "e0813c32eda5264a.html",
+      "type" : "html",
+      "size" : 9161
+    }, {
+      "uid" : "eb33547a22459f63",
+      "name" : "EventLog.mxl",
+      "source" : "eb33547a22459f63.mxl",
+      "type" : "mxl",
+      "size" : 92227
+    }, {
+      "uid" : "f1015934ed77409b",
+      "name" : "EventLog.html",
+      "source" : "f1015934ed77409b.html",
+      "type" : "html",
+      "size" : 91128
+    }, {
+      "uid" : "5a49bd949ca7b376",
+      "name" : "EventLog.xlsx",
+      "source" : "5a49bd949ca7b376.xlsx",
+      "type" : "xlsx",
+      "size" : 18110
+    }, {
+      "uid" : "50cf27ddf4965290",
+      "name" : "ActiveFormState.mxl",
+      "source" : "50cf27ddf4965290.mxl",
+      "type" : "mxl",
+      "size" : 3353
+    }, {
+      "uid" : "aea81c24c50b1035",
+      "name" : "ActiveFormState.html",
+      "source" : "aea81c24c50b1035.html",
+      "type" : "html",
+      "size" : 6816
+    }, {
+      "uid" : "ef5b05715e7bb786",
+      "name" : "ActiveFormState.xlsx",
+      "source" : "ef5b05715e7bb786.xlsx",
+      "type" : "xlsx",
+      "size" : 7031
+    }, {
+      "uid" : "bb3b88f1190e298c",
+      "name" : "AllFormsState.mxl",
+      "source" : "bb3b88f1190e298c.mxl",
+      "type" : "mxl",
+      "size" : 86442
+    }, {
+      "uid" : "bbf35ace03681371",
+      "name" : "AllFormsState.html",
+      "source" : "bbf35ace03681371.html",
+      "type" : "html",
+      "size" : 191271
+    }, {
+      "uid" : "93bc30da72cb91b3",
+      "name" : "AllFormsState.xlsx",
+      "source" : "93bc30da72cb91b3.xlsx",
+      "type" : "xlsx",
+      "size" : 18338
+    }, {
+      "uid" : "be2717e68b2a3ebc",
+      "name" : "NetworkConnectionsData.txt",
+      "source" : "be2717e68b2a3ebc.txt",
+      "type" : "txt",
+      "size" : 10839
+    }, {
+      "uid" : "b5195a817bb53b41",
+      "name" : "OSProcessesData.txt",
+      "source" : "b5195a817bb53b41.txt",
+      "type" : "txt",
+      "size" : 14914
+    }, {
+      "uid" : "f5ea795feed1070c",
+      "name" : "VariablesData.mxl",
+      "source" : "f5ea795feed1070c.mxl",
+      "type" : "mxl",
+      "size" : 3329
+    }, {
+      "uid" : "1e3aa8d9ae16c9e3",
+      "name" : "VariablesData.html",
+      "source" : "1e3aa8d9ae16c9e3.html",
+      "type" : "html",
+      "size" : 6637
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 102,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 68
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_092003 check serial lot number in the Retail return receipt"
+  }, {
+    "name" : "feature",
+    "value" : "_0920 SerialLotNumbers"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "seriallotnumber"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "SerialLotNumber"
+  }, {
+    "name" : "testType",
+    "value" : "screenshotDiff"
+  }, {
+    "name" : "package",
+    "value" : "_0920 SerialLotNumbers"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "seriallotnumber", "tree", "positive" ]
+  },
+  "source" : "31964347af6c0764.json",
+  "parameterValues" : [ ]
+}

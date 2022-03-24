@@ -1,0 +1,320 @@
+{
+  "uid" : "3de870d0953023b8",
+  "name" : "_300516 check connection to CashTransferOrder report \"Related documents\" and generating a report for the current item (Cash receipt)",
+  "historyId" : "create cash transfer._300516 check connection to CashTransferOrder report \"Related documents\" and generating a report for the current item (Cash receipt)",
+  "time" : {
+    "start" : 1633606822729,
+    "stop" : 1633606827819,
+    "duration" : 5090
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I open hyperlink \"e1cib/list/Document.CashTransferOrder\"",
+      "time" : {
+        "start" : 1633606823519,
+        "stop" : 1633606823532,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Document.CashTransferOrder"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Form report Related documents",
+      "time" : {
+        "start" : 1633606823738,
+        "stop" : 1633606826368,
+        "duration" : 2630
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633606823738,
+          "stop" : 1633606824275,
+          "duration" : 537
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "a7dae722f3c8ce35",
+          "name" : "table",
+          "source" : "a7dae722f3c8ce35.csv",
+          "type" : "text/csv",
+          "size" : 18
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I click the button named \"FormFilterCriterionRelatedDocumentsRelatedDocuments\"",
+        "time" : {
+          "start" : 1633606824538,
+          "stop" : 1633606824552,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormFilterCriterionRelatedDocumentsRelatedDocuments"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And Delay 1",
+        "time" : {
+          "start" : 1633606824744,
+          "stop" : 1633606825757,
+          "duration" : 1013
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "1"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Then \"Related documents\" window is opened",
+        "time" : {
+          "start" : 1633606825957,
+          "stop" : 1633606825967,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Related documents"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"DocumentsTree\" table contains lines",
+        "time" : {
+          "start" : 1633606826166,
+          "stop" : 1633606826368,
+          "duration" : 202
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "d068e28de8cef6e7",
+          "name" : "table",
+          "source" : "d068e28de8cef6e7.csv",
+          "type" : "text/csv",
+          "size" : 242
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "DocumentsTree"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "*  Check the report generation from list",
+      "time" : {
+        "start" : 1633606826570,
+        "stop" : 1633606827568,
+        "duration" : 998
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I go to the last line in \"DocumentsTree\" table",
+        "time" : {
+          "start" : 1633606826570,
+          "stop" : 1633606826579,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "DocumentsTree"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"DocumentsTree\" table",
+        "time" : {
+          "start" : 1633606826772,
+          "stop" : 1633606826915,
+          "duration" : 143
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "e2197a76d86ed0c5",
+          "name" : "table",
+          "source" : "e2197a76d86ed0c5.csv",
+          "type" : "text/csv",
+          "size" : 63
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "DocumentsTree"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And in the table \"DocumentsTree\" I click the button named \"DocumentsTreeGenerateForCurrent\"",
+        "time" : {
+          "start" : 1633606827177,
+          "stop" : 1633606827191,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "DocumentsTree"
+        }, {
+          "name" : "Парам2",
+          "value" : "DocumentsTreeGenerateForCurrent"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And \"DocumentsTree\" table contains lines",
+        "time" : {
+          "start" : 1633606827381,
+          "stop" : 1633606827568,
+          "duration" : 187
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "73ed883ba5529ef2",
+          "name" : "table",
+          "source" : "73ed883ba5529ef2.csv",
+          "type" : "text/csv",
+          "size" : 135
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "DocumentsTree"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633606827788,
+        "stop" : 1633606827818,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 13,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_300516 check connection to CashTransferOrder report \"Related documents\" and generating a report for the current item (Cash receipt)"
+  }, {
+    "name" : "feature",
+    "value" : "_0500 Cash management"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "cashmanagement"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "CashManagement"
+  }, {
+    "name" : "package",
+    "value" : "_0500 Cash management"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "cashmanagement", "tree", "positive" ]
+  },
+  "source" : "3de870d0953023b8.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,428 @@
+{
+  "uid" : "a38cbca9effadb50",
+  "name" : "_2068006 check locking tab in the StockAdjustmentAsSurplus with linked documents (one session)",
+  "historyId" : "locking linked strings (Physical inventory, Stock adjustment as surplus, Stock adjustment as write-off )._2068006 check locking tab in the StockAdjustmentAsSurplus with linked documents (one session)",
+  "time" : {
+    "start" : 1633610336758,
+    "stop" : 1633610350810,
+    "duration" : 14052
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633610336922,
+        "stop" : 1633610336928,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Open StockAdjustmentAsSurplus",
+      "time" : {
+        "start" : 1633610337124,
+        "stop" : 1633610337552,
+        "duration" : 428
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.StockAdjustmentAsSurplus\"",
+        "time" : {
+          "start" : 1633610337124,
+          "stop" : 1633610337133,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.StockAdjustmentAsSurplus"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1633610337335,
+          "stop" : 1633610337433,
+          "duration" : 98
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "457ce4bcdb76cba3",
+          "name" : "table",
+          "source" : "457ce4bcdb76cba3.csv",
+          "type" : "text/csv",
+          "size" : 19
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1633610337544,
+          "stop" : 1633610337552,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "* Check locking tab",
+      "time" : {
+        "start" : 1633610337734,
+        "stop" : 1633610350664,
+        "duration" : 12930
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "* Items",
+        "time" : {
+          "start" : 1633610337734,
+          "stop" : 1633610340876,
+          "duration" : 3142
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I go to line in \"ItemList\" table",
+          "time" : {
+            "start" : 1633610337734,
+            "stop" : 1633610337897,
+            "duration" : 163
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "76e5cfec1e7f4898",
+            "name" : "table",
+            "source" : "76e5cfec1e7f4898.csv",
+            "type" : "text/csv",
+            "size" : 41
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "When I Check the steps for Exception",
+          "time" : {
+            "start" : 1633610338146,
+            "stop" : 1633610340876,
+            "duration" : 2730
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "b24630d91530b49d",
+            "name" : "table",
+            "source" : "b24630d91530b49d.csv",
+            "type" : "text/csv",
+            "size" : 76
+          } ],
+          "parameters" : [ ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "* Item key",
+        "time" : {
+          "start" : 1633610340987,
+          "stop" : 1633610344145,
+          "duration" : 3158
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I go to line in \"ItemList\" table",
+          "time" : {
+            "start" : 1633610340987,
+            "stop" : 1633610340999,
+            "duration" : 12
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "bee64bffe0ed6dc3",
+            "name" : "table",
+            "source" : "bee64bffe0ed6dc3.csv",
+            "type" : "text/csv",
+            "size" : 41
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "When I Check the steps for Exception",
+          "time" : {
+            "start" : 1633610341214,
+            "stop" : 1633610344145,
+            "duration" : 2931
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "18ab131ee56a0fb4",
+            "name" : "table",
+            "source" : "18ab131ee56a0fb4.csv",
+            "type" : "text/csv",
+            "size" : 80
+          } ],
+          "parameters" : [ ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "* Basis document",
+        "time" : {
+          "start" : 1633610344440,
+          "stop" : 1633610347457,
+          "duration" : 3017
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I go to line in \"ItemList\" table",
+          "time" : {
+            "start" : 1633610344440,
+            "stop" : 1633610344451,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "862b558cb65fc085",
+            "name" : "table",
+            "source" : "862b558cb65fc085.csv",
+            "type" : "text/csv",
+            "size" : 41
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "When I Check the steps for Exception",
+          "time" : {
+            "start" : 1633610344644,
+            "stop" : 1633610347457,
+            "duration" : 2813
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "d06d10d6ffe6b047",
+            "name" : "table",
+            "source" : "d06d10d6ffe6b047.csv",
+            "type" : "text/csv",
+            "size" : 86
+          } ],
+          "parameters" : [ ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "* Physical inventory",
+        "time" : {
+          "start" : 1633610347687,
+          "stop" : 1633610350664,
+          "duration" : 2977
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I go to line in \"ItemList\" table",
+          "time" : {
+            "start" : 1633610347687,
+            "stop" : 1633610347696,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "4bad516693cd01fe",
+            "name" : "table",
+            "source" : "4bad516693cd01fe.csv",
+            "type" : "text/csv",
+            "size" : 41
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ItemList"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "When I Check the steps for Exception",
+          "time" : {
+            "start" : 1633610347894,
+            "stop" : 1633610350664,
+            "duration" : 2770
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "c6fe9e115ef09b0a",
+            "name" : "table",
+            "source" : "c6fe9e115ef09b0a.csv",
+            "type" : "text/csv",
+            "size" : 90
+          } ],
+          "parameters" : [ ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 12,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 8
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1633610350773,
+        "stop" : 1633610350810,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 19,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 9
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_2068006 check locking tab in the StockAdjustmentAsSurplus with linked documents (one session)"
+  }, {
+    "name" : "feature",
+    "value" : "_0950 LinkedTransaction"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "linkedtransaction"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "LinkedTransaction"
+  }, {
+    "name" : "package",
+    "value" : "_0950 LinkedTransaction"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "linkedtransaction", "positive" ]
+  },
+  "source" : "a38cbca9effadb50.json",
+  "parameterValues" : [ ]
+}

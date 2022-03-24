@@ -1,0 +1,752 @@
+{
+  "uid" : "7995e61768f6ed0e",
+  "name" : "_3510003 check clearing the values ​​of Tax types and Multi currency movement type when changing the OurCompany checkmark in Company",
+  "historyId" : "check the cleaning of fields in forms of directories with switches (the drawing of the form depends on the switch)._3510003 check clearing the values ​​of Tax types and Multi currency movement type when changing the OurCompany checkmark in Company",
+  "time" : {
+    "start" : 1633607380565,
+    "stop" : 1633607391726,
+    "duration" : 11161
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "* Open Compant form",
+      "time" : {
+        "start" : 1633607381471,
+        "stop" : 1633607382280,
+        "duration" : 809
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Catalog.Companies\"",
+        "time" : {
+          "start" : 1633607381471,
+          "stop" : 1633607381477,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Catalog.Companies"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I click the button named \"FormCreate\"",
+        "time" : {
+          "start" : 1633607381678,
+          "stop" : 1633607382280,
+          "duration" : 602
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormCreate"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Tick the box OurCompany and fill in Tax types and Multi currency movement types",
+      "time" : {
+        "start" : 1633607382486,
+        "stop" : 1633607391726,
+        "duration" : 9240
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I input \"Test\" text in the field named \"Description_en\"",
+        "time" : {
+          "start" : 1633607382486,
+          "stop" : 1633607382500,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Description_en"
+        }, {
+          "name" : "Парам2",
+          "value" : "Test"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "And I set checkbox \"Our Company\"",
+        "time" : {
+          "start" : 1633607382691,
+          "stop" : 1633607382709,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Our Company"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "* Filling in Multi currency movement type",
+        "time" : {
+          "start" : 1633607382891,
+          "stop" : 1633607385650,
+          "duration" : 2759
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And in the table \"Currencies\" I click the button named \"CurrenciesAdd\"",
+          "time" : {
+            "start" : 1633607382891,
+            "stop" : 1633607382917,
+            "duration" : 26
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Currencies"
+          }, {
+            "name" : "Парам2",
+            "value" : "CurrenciesAdd"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Movement type\" attribute in \"Currencies\" table",
+          "time" : {
+            "start" : 1633607383097,
+            "stop" : 1633607383173,
+            "duration" : 76
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Currencies"
+          }, {
+            "name" : "Парам2",
+            "value" : "Movement type"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633607383340,
+            "stop" : 1633607384754,
+            "duration" : 1414
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "2e943af8636cc940",
+            "name" : "table",
+            "source" : "2e943af8636cc940.csv",
+            "type" : "text/csv",
+            "size" : 161
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I activate \"Description\" field in \"List\" table",
+          "time" : {
+            "start" : 1633607384926,
+            "stop" : 1633607384938,
+            "duration" : 12
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "Description"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633607385129,
+            "stop" : 1633607385142,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I finish line editing in \"Currencies\" table",
+          "time" : {
+            "start" : 1633607385330,
+            "stop" : 1633607385345,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Currencies"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And \"Currencies\" table contains lines",
+          "time" : {
+            "start" : 1633607385538,
+            "stop" : 1633607385650,
+            "duration" : 112
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "3297acb083a3cd63",
+            "name" : "table",
+            "source" : "3297acb083a3cd63.csv",
+            "type" : "text/csv",
+            "size" : 102
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Currencies"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 7,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "* Filling in Tax types",
+        "time" : {
+          "start" : 1633607385937,
+          "stop" : 1633607388344,
+          "duration" : 2407
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I move to \"Tax types\" tab",
+          "time" : {
+            "start" : 1633607385937,
+            "stop" : 1633607385947,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Tax types"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And in the table \"CompanyTaxes\" I click the button named \"CompanyTaxesAdd\"",
+          "time" : {
+            "start" : 1633607386143,
+            "stop" : 1633607386161,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CompanyTaxes"
+          }, {
+            "name" : "Парам2",
+            "value" : "CompanyTaxesAdd"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"01.10.2019\" text in \"Period\" field",
+          "time" : {
+            "start" : 1633607386346,
+            "stop" : 1633607386363,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Period"
+          }, {
+            "name" : "Парам2",
+            "value" : "01.10.2019"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Tax\" field in \"CompanyTaxes\" table",
+          "time" : {
+            "start" : 1633607386469,
+            "stop" : 1633607386513,
+            "duration" : 44
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CompanyTaxes"
+          }, {
+            "name" : "Парам2",
+            "value" : "Tax"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click choice button of \"Tax\" attribute in \"CompanyTaxes\" table",
+          "time" : {
+            "start" : 1633607386754,
+            "stop" : 1633607386779,
+            "duration" : 25
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CompanyTaxes"
+          }, {
+            "name" : "Парам2",
+            "value" : "Tax"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1633607387010,
+            "stop" : 1633607387134,
+            "duration" : 124
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "602021000012e8ed",
+            "name" : "table",
+            "source" : "602021000012e8ed.csv",
+            "type" : "text/csv",
+            "size" : 43
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1633607387361,
+            "stop" : 1633607387371,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I activate \"Priority\" field in \"CompanyTaxes\" table",
+          "time" : {
+            "start" : 1633607387565,
+            "stop" : 1633607387587,
+            "duration" : 22
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CompanyTaxes"
+          }, {
+            "name" : "Парам2",
+            "value" : "Priority"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I input \"2\" text in \"Priority\" field of \"CompanyTaxes\" table",
+          "time" : {
+            "start" : 1633607387768,
+            "stop" : 1633607387787,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CompanyTaxes"
+          }, {
+            "name" : "Парам2",
+            "value" : "Priority"
+          }, {
+            "name" : "Парам3",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I finish line editing in \"CompanyTaxes\" table",
+          "time" : {
+            "start" : 1633607387974,
+            "stop" : 1633607387988,
+            "duration" : 14
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CompanyTaxes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And \"CompanyTaxes\" table contains lines",
+          "time" : {
+            "start" : 1633607388210,
+            "stop" : 1633607388344,
+            "duration" : 134
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "d66a6953156ea128",
+            "name" : "table",
+            "source" : "d66a6953156ea128.csv",
+            "type" : "text/csv",
+            "size" : 44
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CompanyTaxes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 11,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "* Check to clear completed data when uncheck OurCompany",
+        "time" : {
+          "start" : 1633607388579,
+          "stop" : 1633607391726,
+          "duration" : 3147
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I move to \"Info\" tab",
+          "time" : {
+            "start" : 1633607388579,
+            "stop" : 1633607388588,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Info"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I remove checkbox \"Our Company\"",
+          "time" : {
+            "start" : 1633607388782,
+            "stop" : 1633607388795,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Our Company"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I select \"Company\" exact value from the drop-down list named \"Type\"",
+          "time" : {
+            "start" : 1633607388990,
+            "stop" : 1633607389023,
+            "duration" : 33
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Type"
+          }, {
+            "name" : "Парам2",
+            "value" : "Company"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I click \"Save\" button",
+          "time" : {
+            "start" : 1633607389191,
+            "stop" : 1633607389213,
+            "duration" : 22
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Save"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And I set checkbox \"Our Company\"",
+          "time" : {
+            "start" : 1633607389401,
+            "stop" : 1633607391064,
+            "duration" : 1663
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Our Company"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "And \"Currencies\" table does not contain lines",
+          "time" : {
+            "start" : 1633607391223,
+            "stop" : 1633607391239,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "336109bc557e9065",
+            "name" : "table",
+            "source" : "336109bc557e9065.csv",
+            "type" : "text/csv",
+            "size" : 102
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Currencies"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And \"CompanyTaxes\" table does not contain lines",
+          "time" : {
+            "start" : 1633607391424,
+            "stop" : 1633607391441,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "86007def6f8dc0a6",
+            "name" : "table",
+            "source" : "86007def6f8dc0a6.csv",
+            "type" : "text/csv",
+            "size" : 44
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "CompanyTaxes"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1633607391628,
+            "stop" : 1633607391726,
+            "duration" : 98
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 8,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 31,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 6
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 35,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 6
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_3510003 check clearing the values ​​of Tax types and Multi currency movement type when changing the OurCompany checkmark in Company"
+  }, {
+    "name" : "feature",
+    "value" : "_3000Other"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "other"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "Other"
+  }, {
+    "name" : "package",
+    "value" : "_3000Other"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "other", "tree", "positive" ]
+  },
+  "source" : "7995e61768f6ed0e.json",
+  "parameterValues" : [ ]
+}

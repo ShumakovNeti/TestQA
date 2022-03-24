@@ -1,0 +1,260 @@
+{
+  "uid" : "296cf52d7e5e7691",
+  "name" : "_028070 check filter by own companies in the document SalesOrderClosing",
+  "historyId" : "filter by Company and Legal name on document forms._028070 check filter by own companies in the document SalesOrderClosing",
+  "time" : {
+    "start" : 1633608339634,
+    "stop" : 1633608344303,
+    "duration" : 4669
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "* Open document form",
+      "time" : {
+        "start" : 1633608340385,
+        "stop" : 1633608340393,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.SalesOrderClosing\"",
+        "time" : {
+          "start" : 1633608340385,
+          "stop" : 1633608340393,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.SalesOrderClosing"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "* Check the filter for Own Company",
+      "time" : {
+        "start" : 1633608340593,
+        "stop" : 1633608344303,
+        "duration" : 3710
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "When check the filter by my own company in Opening entry/Item stock adjustment",
+        "time" : {
+          "start" : 1633608340593,
+          "stop" : 1633608344303,
+          "duration" : 3710
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I click the button named \"FormCreate\"",
+          "time" : {
+            "start" : 1633608340593,
+            "stop" : 1633608340718,
+            "duration" : 125
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "FormCreate"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "* Check visual filter",
+          "time" : {
+            "start" : 1633608340996,
+            "stop" : 1633608344093,
+            "duration" : 3097
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I click Select button of \"Company\" field",
+            "time" : {
+              "start" : 1633608340996,
+              "stop" : 1633608341794,
+              "duration" : 798
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "Company"
+            } ],
+            "hasContent" : true,
+            "stepsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "And \"List\" table became equal",
+            "time" : {
+              "start" : 1633608341910,
+              "stop" : 1633608343583,
+              "duration" : 1673
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "b126aa9d65921e21",
+              "name" : "table",
+              "source" : "b126aa9d65921e21.csv",
+              "type" : "text/csv",
+              "size" : 52
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "List"
+            } ],
+            "hasContent" : true,
+            "stepsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 1
+          }, {
+            "name" : "And I select current line in \"List\" table",
+            "time" : {
+              "start" : 1633608343847,
+              "stop" : 1633608343854,
+              "duration" : 7
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "List"
+            } ],
+            "hasContent" : true,
+            "stepsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "Then the form attribute named \"Company\" became equal to \"Main Company\"",
+            "time" : {
+              "start" : 1633608344041,
+              "stop" : 1633608344093,
+              "duration" : 52
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "Company"
+            }, {
+              "name" : "Парам2",
+              "value" : "Main Company"
+            } ],
+            "hasContent" : true,
+            "stepsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : true,
+          "stepsCount" : 4,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1633608344245,
+            "stop" : 1633608344303,
+            "duration" : 58
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 7,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 8,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 11,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "_028070 check filter by own companies in the document SalesOrderClosing"
+  }, {
+    "name" : "feature",
+    "value" : "_0915Filters"
+  }, {
+    "name" : "epic",
+    "value" : "Internal"
+  }, {
+    "name" : "tag",
+    "value" : "filters"
+  }, {
+    "name" : "tag",
+    "value" : "positive"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "thread",
+    "value" : "Filters"
+  }, {
+    "name" : "package",
+    "value" : "_0915Filters"
+  }, {
+    "name" : "host",
+    "value" : "TeamAgent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "filters", "positive" ]
+  },
+  "source" : "296cf52d7e5e7691.json",
+  "parameterValues" : [ ]
+}
